@@ -78,7 +78,7 @@ export default function Registration() {
                 </div>
                 <div className="form inputs">
                     <h4>General Information</h4>
-                    <form className="form container" onSubmit={onSubmit}>
+                    <form className="form container" onSubmit={onSubmit} disabled={disabled}>
                         <label> Username:
                             <input
                                 value={formValues.username}
