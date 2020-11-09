@@ -55,7 +55,7 @@ export default function Login() {
                 console.log(res.data.user.id, 'resdata');
                 localStorage.setItem('token', res.data.token);
                 localStorage.setItem('userId', res.data.user.id);
-                push('/home');
+                push('/');
             })
             .catch((error) => {
                 console.log(error);

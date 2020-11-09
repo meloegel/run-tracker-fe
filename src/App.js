@@ -1,24 +1,52 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import './App.css';
 
+import UserContext from './contexts/UserContext';
+import RunTrackerContext from './contexts/RunTrackerContext';
+
+import PrivateRoute from './utils/PrivateRoute';
+
+import Registration from './components/Registration';
+import Login from './components/Login';
+
+
+
 function App() {
+  const [runList, setRunList] = useState([]);
+  const [isLoggedIn, SetIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState({
+    userId: window.localStorage.getItem('userId')
+  });
+
+  const handleLogout = () => {
+    localStorage.clear();
+    SetIsLoggedIn(false);
+    setUserId('');
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <RunTrackerContext.Provider value={{ runList, setRunList }}>
+        <UserContext.Provider value={{ userId, setUserId }}>
+          <div className="App">
+            <nav>
+              <NavLink to='/'>Home</NavLink>
+              <NavLink to='/register'>Register</NavLink>
+              <NavLink to='/login'>Sign In</NavLink>
+              <NavLink to='/account'>Account</NavLink>
+              <NavLink to='/' onClick={handleLogout}>Logout</NavLink>
+            </nav>
+            <div>
+              <Switch>
+                <Route path='/register' component={Registration} />
+                <Route path='/login' component={Login} />
+              </Switch>
+            </div>
+          </div>
+        </UserContext.Provider>
+      </RunTrackerContext.Provider>
+    </Router>
   );
 }
 
