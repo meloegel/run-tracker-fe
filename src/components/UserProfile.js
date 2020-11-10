@@ -5,7 +5,9 @@ import UserContext from '../contexts/UserContext';
 
 const initialDetails = {
     username: '',
-    email: ''
+    email: '',
+    location: '',
+    avatar: ''
 }
 
 const UserProfile = () => {
@@ -63,6 +65,22 @@ const UserProfile = () => {
                     value={details.email}
                 />
                 <br />
+                <input
+                    type="text"
+                    name="location"
+                    onChange={handleChange}
+                    placeholder="Location"
+                    value={details.location}
+                />
+                <div />
+                <input
+                    type="text"
+                    name="avatar"
+                    onChange={handleChange}
+                    placeholder="Avatar"
+                    value={details.avatar}
+                />
+                <div />
                 <button className="update-user-button">Update</button>
             </form>
         </div>
