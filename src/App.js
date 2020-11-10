@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
-import './App.css';
+import './styles/sass/index.scss';
 
 import UserContext from './contexts/UserContext';
 import RunTrackerContext from './contexts/RunTrackerContext';

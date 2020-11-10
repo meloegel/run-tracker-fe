@@ -6,7 +6,7 @@ const RunCard = ({ run }) => {
     const { push } = useHistory();
 
     return (
-        <div>
+        <div className='runCard'>
             <h2 className='runTime'>Run Time: {run.runTime}</h2>
             <h2 className='distance'>Distance: {run.distance}</h2>
             <h2 className='pace'>Pace: {run.pace}</h2>

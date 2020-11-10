@@ -21,7 +21,7 @@ const UserInfo = ({ userId }) => {
         <div>
             <h2 className='username'>Username: {userInfo.username}</h2>
             <h2 className='location'>Location: {userInfo.location}</h2>
-            <img src={userInfo.avatar} alt='Users Avatar' />
+            <img src={userInfo.avatar} alt='Users Avatar' className='avatarImg' />
         </div>
     )
 }
