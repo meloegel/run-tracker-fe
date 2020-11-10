@@ -3,10 +3,12 @@ import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../contexts/RunTrackerContext';
 import RunList from './RunList';
+import UserContext from '../contexts/UserContext';
 
 const HomePage = () => {
     const { push } = useHistory();
     const { runList, setRunList } = useContext(RunTrackerContext);
+    const { userId } = useContext(UserContext);
 
     const getAllPublishedRuns = () => {
         axiosWithAuth()
@@ -18,7 +20,7 @@ const HomePage = () => {
     useEffect(() => {
         getAllPublishedRuns();
         console.log(runList)
-    })
+    }, [userId])
 
     return (
         <div>
