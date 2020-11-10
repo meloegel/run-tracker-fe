@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { axiosWithAuth } from '../utils/axiosWithAuth';
-
+import UserInfo from './UserInfo';
 
 const RunCard = ({ run }) => {
     const { push } = useHistory();
@@ -14,6 +13,7 @@ const RunCard = ({ run }) => {
             <h2 className='posted'>Posted: {run.timePosted}</h2>
             <h2 className='description'>Description: {run.description}</h2>
             <h2 className='user'>User: {run.userId}</h2>
+            <UserInfo userId={run.userId} />
         </div>
     )
 }
