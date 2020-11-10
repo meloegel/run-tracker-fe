@@ -10,7 +10,7 @@ import PrivateRoute from './utils/PrivateRoute';
 import Registration from './components/Registration';
 import Login from './components/Login';
 import HomePage from './components/HomePage';
-
+import UserProfile from './components/UserProfile';
 
 function App() {
   const [runList, setRunList] = useState([]);
