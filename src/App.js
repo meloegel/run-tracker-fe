@@ -11,6 +11,8 @@ import Registration from './components/Registration';
 import Login from './components/Login';
 import HomePage from './components/HomePage';
 import UserProfile from './components/UserProfile';
+import AddRun from './components/AddRun';
+import MyRunList from './components/MyRunList';
 
 function App() {
   const [runList, setRunList] = useState([]);
@@ -34,7 +36,7 @@ function App() {
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/register'>Register</NavLink>
               <NavLink to='/login'>Sign In</NavLink>
-              <NavLink to='/account'>Account</NavLink>
+              <NavLink to='/account'>Account Settings</NavLink>
               <NavLink to='/' onClick={handleLogout}>Logout</NavLink>
             </nav>
             <div>
@@ -42,6 +44,9 @@ function App() {
                 <Route eaxct path='/' component={HomePage} />
                 <Route path='/register' component={Registration} />
                 <Route path='/login' component={Login} />
+                <PrivateRoute path='/account' component={UserProfile} />
+                <PrivateRoute path='/add-run' component={AddRun} />
+                <PrivateRoute path='/my-run-list' component={MyRunList} />
               </Switch>
             </div>
           </div>

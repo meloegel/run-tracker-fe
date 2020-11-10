@@ -2,7 +2,6 @@ import React, { useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../contexts/RunTrackerContext';
-
 import RunList from './RunList';
 
 const HomePage = () => {
