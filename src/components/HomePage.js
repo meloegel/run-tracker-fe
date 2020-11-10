@@ -7,17 +7,18 @@ import RunList from './RunList';
 
 const HomePage = () => {
     const { push } = useHistory();
-    const { setRunList } = useContext(RunTrackerContext);
+    const { runList, setRunList } = useContext(RunTrackerContext);
 
     const getAllPublishedRuns = () => {
         axiosWithAuth()
-            .get('/api/auth/run-tracker/runs')
+            .get('api/run-tracker/runs')
             .then(res => setRunList(res.data))
             .catch(err => console.log(err))
     }
 
     useEffect(() => {
         getAllPublishedRuns();
+        console.log(runList)
     })
 
     return (

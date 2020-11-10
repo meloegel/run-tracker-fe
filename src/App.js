@@ -9,7 +9,7 @@ import PrivateRoute from './utils/PrivateRoute';
 
 import Registration from './components/Registration';
 import Login from './components/Login';
-
+import HomePage from './components/HomePage';
 
 
 function App() {
@@ -39,6 +39,7 @@ function App() {
             </nav>
             <div>
               <Switch>
+                <Route eaxct path='/' component={HomePage} />
                 <Route path='/register' component={Registration} />
                 <Route path='/login' component={Login} />
               </Switch>
