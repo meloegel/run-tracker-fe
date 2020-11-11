@@ -41,7 +41,7 @@ function App() {
             </nav>
             <div>
               <Switch>
-                <Route eaxct path='/' component={HomePage} />
+                <Route exact path='/' component={HomePage} />
                 <Route path='/register' component={Registration} />
                 <Route path='/login' component={Login} />
                 <PrivateRoute path='/account' component={UserProfile} />

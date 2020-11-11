@@ -16,6 +16,9 @@ const UserProfile = () => {
     const { userId, setUserId } = useContext(UserContext);
 
     useEffect(() => {
+        setUserId({
+            userId: window.localStorage.getItem('userId')
+        })
         axiosWithAuth()
             .get(`/api/auth/users/${userId.userId}`)
             .then(res => {
