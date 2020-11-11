@@ -9,14 +9,14 @@ const initalDetails = {
     distance: '',
     pace: '',
     description: '',
-    publish: '',
+    publish: true,
 };
 
 const AddRun = () => {
     const { push } = useHistory();
     const [details, setDetails] = useState(initalDetails)
     const { runList, setRunList } = useContext(RunTrackerContext);
-    const [publish, setPublish] = useState(false)
+    const [publish, setPublish] = useState(true)
     const { userId } = useContext(UserContext);
 
     const handleChange = evt => {
@@ -24,13 +24,16 @@ const AddRun = () => {
             ...details,
             [evt.target.name]: evt.target.value
         });
+
     };
 
     const handleCheckbox = evt => {
+        setPublish(!publish)
         setDetails({
             ...details,
-            publish: !publish
+            publish: publish
         })
+        console.log(details)
     }
 
     const handleSubmit = evt => {
