@@ -3,10 +3,11 @@ import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import PersonalInfo from './Personal-Info';
-
+import RunContext from '../../contexts/RunContext';
 
 const MyRunCard = ({ run }) => {
     const { push } = useHistory();
+    const { runInfo, setRunInfo } = useContext(RunContext)
     console.log(run)
 
     const handleDelete = () => {
@@ -31,6 +32,13 @@ const MyRunCard = ({ run }) => {
         }
     }
 
+    const handleEdit = () => {
+        setRunInfo({
+            runInfo: run.runTimeID.toString()
+        })
+        push(`/edit-run/${run.runTimeID}`)
+    }
+
     return (
         <div className='runCard'>
             <h2 className='runTime'>Run Time: {run.runTime}</h2>
@@ -41,6 +49,7 @@ const MyRunCard = ({ run }) => {
             <h2 className='description'>Description: {run.description}</h2>
             <PersonalInfo />
             <button onClick={handleConfirm}>Delete Run</button>
+            <button onClick={handleEdit}>Edit Run</button>
         </div>
     )
 }
