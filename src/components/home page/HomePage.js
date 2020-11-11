@@ -1,9 +1,9 @@
 import React, { useEffect, useContext } from 'react';
-import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
-import RunTrackerContext from '../contexts/RunTrackerContext';
+import RunTrackerContext from '../../contexts/RunTrackerContext';
 import RunList from './RunList';
-import UserContext from '../contexts/UserContext';
+import UserContext from '../../contexts/UserContext';
 
 const HomePage = () => {
     const { push } = useHistory();

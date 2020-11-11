@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import UserInfo from './UserInfo';
+import UserInfo from '../UserInfo';
 
 const RunCard = ({ run }) => {
     const { push } = useHistory();

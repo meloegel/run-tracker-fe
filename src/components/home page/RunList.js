@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import RunTrackerContext from '../contexts/RunTrackerContext';
+import RunTrackerContext from '../../contexts/RunTrackerContext';
 import RunCard from './RunCard';
 
 const RunList = () => {

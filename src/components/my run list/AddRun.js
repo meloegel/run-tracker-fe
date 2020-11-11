@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { axiosWithAuth } from '../utils/axiosWithAuth';
-import UserContext from '../contexts/UserContext';
-import RunTrackerContext from '../contexts/RunTrackerContext';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
+import UserContext from '../../contexts/UserContext';
+import RunTrackerContext from '../../contexts/RunTrackerContext';
 
 const initalDetails = {
     runTime: '',

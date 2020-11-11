@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { axiosWithAuth } from '../utils/axiosWithAuth';
-import loginSchema from '../validation/loginSchema';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
+import loginSchema from '../../validation/loginSchema';
 import * as yup from 'yup';
 
 const initialFormValues = {

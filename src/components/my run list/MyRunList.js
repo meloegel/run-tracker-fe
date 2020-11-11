@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from 'react';
-import { axiosWithAuth } from '../utils/axiosWithAuth';
+import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
-import RunTrackerContext from '../contexts/RunTrackerContext';
-import UserContext from '../contexts/UserContext';
+import RunTrackerContext from '../../contexts/RunTrackerContext';
+import UserContext from '../../contexts/UserContext';
 import RunList from './RunList';
 
 const MyRunList = () => {
