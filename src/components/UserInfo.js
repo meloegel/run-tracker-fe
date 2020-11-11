@@ -2,10 +2,16 @@ import React, { useState, useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
 
+const initialDetails = {
+    username: '',
+    location: '',
+    avatar: ''
+}
+
 
 const UserInfo = ({ userId }) => {
     console.log(userId)
-    const [userInfo, setUserInfo] = useState()
+    const [userInfo, setUserInfo] = useState(initialDetails)
 
     useEffect(() => {
         axiosWithAuth()
@@ -15,8 +21,8 @@ const UserInfo = ({ userId }) => {
                 setUserInfo(res.data)
             })
             .catch(err => console.log(err))
-    }, [userId])
-
+    }, [])
+    console.log(userInfo)
     return (
         <div>
             <h2 className='username'>Username: {userInfo.username}</h2>

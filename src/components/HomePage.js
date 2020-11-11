@@ -19,8 +19,8 @@ const HomePage = () => {
 
     useEffect(() => {
         getAllPublishedRuns();
-        console.log(runList)
-    }, [userId])
+    }, [])
+
 
     return (
         <div>
