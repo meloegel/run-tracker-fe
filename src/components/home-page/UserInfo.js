@@ -10,7 +10,7 @@ const initialDetails = {
 
 
 const UserInfo = ({ userId }) => {
-    console.log(userId)
+    // console.log(userId)
     const [userInfo, setUserInfo] = useState(initialDetails)
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const UserInfo = ({ userId }) => {
             })
             .catch(err => console.log(err))
     }, [])
-    console.log(userInfo)
+    // console.log(userInfo)
     return (
         <div>
             <h2 className='username'>Username: {userInfo.username}</h2>

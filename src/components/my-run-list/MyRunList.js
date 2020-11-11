@@ -3,7 +3,7 @@ import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../../contexts/RunTrackerContext';
 import UserContext from '../../contexts/UserContext';
-import RunList from '../home-page/RunList';
+import PersonalRunList from './PersonalRunList';
 
 const MyRunList = () => {
     const { push } = useHistory();
@@ -29,7 +29,7 @@ const MyRunList = () => {
         <div>
             <h1>My Run List</h1>
             <div>
-                <RunList />
+                <PersonalRunList />
             </div>
             <button onClick={() => push('/add-run')}>Add Run</button>
         </div>

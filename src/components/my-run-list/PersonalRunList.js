@@ -9,7 +9,7 @@ const PersonalRunList = () => {
         <div>
             {runList.map(run => (
                 <MyRunCard
-                    key={run.id}
+                    key={run.runTimeID}
                     run={run}
                     className='run'
                 />
