@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
+import UserContext from '../../contexts/UserContext';
 
 
 const initialDetails = {
@@ -9,13 +10,16 @@ const initialDetails = {
 }
 
 
-const UserInfo = ({ userId }) => {
-    console.log(userId)
+const PersonalInfo = () => {
     const [userInfo, setUserInfo] = useState(initialDetails)
+    const { userId, setUserId } = useContext(UserContext);
 
     useEffect(() => {
+        setUserId({
+            userId: window.localStorage.getItem('userId')
+        })
         axiosWithAuth()
-            .get(`api/run-tracker/user/${userId}`)
+            .get(`api/run-tracker/user/${userId.userId}`)
             .then(res => {
                 console.log(res)
                 setUserInfo(res.data)
@@ -32,4 +36,4 @@ const UserInfo = ({ userId }) => {
     )
 }
 
-export default UserInfo;
+export default PersonalInfo;

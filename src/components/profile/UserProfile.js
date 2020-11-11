@@ -26,7 +26,7 @@ const UserProfile = () => {
                 setDetails(res.data);
             })
             .catch(err => console.log(err));
-    }, [userId]);
+    }, []);
 
     const handleChange = evt => {
         setDetails({
