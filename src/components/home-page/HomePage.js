@@ -2,38 +2,35 @@ import React, { useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../../contexts/RunTrackerContext';
+import RunList from '../home-page/RunList';
 import UserContext from '../../contexts/UserContext';
-import RunList from './RunList';
 
-const MyRunList = () => {
+const HomePage = () => {
     const { push } = useHistory();
     const { runList, setRunList } = useContext(RunTrackerContext);
-    const { userId, setUserId } = useContext(UserContext);
+    const { userId } = useContext(UserContext);
 
-    const getUserRuns = () => {
-        setUserId({
-            userId: window.localStorage.getItem('userId')
-        })
-        setRunList([])
+    const getAllPublishedRuns = () => {
         axiosWithAuth()
-            .get(`/api/auth/run-tracker/user/${userId.userId}`)
+            .get('api/run-tracker/runs')
             .then(res => setRunList(res.data))
             .catch(err => console.log(err))
     }
 
     useEffect(() => {
-        getUserRuns(userId.userId)
-    }, [userId.userId])
+        getAllPublishedRuns();
+    }, [])
+
 
     return (
         <div>
-            <h1>My Run List</h1>
+            <h1>Run Tracker</h1>
             <div>
                 <RunList />
             </div>
-            <button onClick={() => push('/add-run')}>Add Run</button>
+            <button onClick={() => push('/register')}>Make account here!</button>
         </div>
     )
 }
 
-export default MyRunList;
+export default HomePage;

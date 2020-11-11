@@ -7,12 +7,12 @@ import RunTrackerContext from './contexts/RunTrackerContext';
 
 import PrivateRoute from './utils/PrivateRoute';
 
-import Registration from './components/Registration';
-import Login from './components/Login';
-import HomePage from './components/HomePage';
-import UserProfile from './components/UserProfile';
-import AddRun from './components/AddRun';
-import MyRunList from './components/MyRunList';
+import Registration from './components/profile/Registration';
+import Login from './components/profile/Login';
+import HomePage from './components/home-page/HomePage';
+import UserProfile from './components/profile/UserProfile';
+import AddRun from './components/my-run-list/AddRun';
+import MyRunList from './components/my-run-list/MyRunList';
 
 function App() {
   const [runList, setRunList] = useState([]);
