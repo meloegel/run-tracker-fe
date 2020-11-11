@@ -26,6 +26,7 @@ function App() {
 
   const handleLogout = () => {
     localStorage.clear();
+    window.location.reload()
     SetIsLoggedIn(false);
     setUserId('');
   }
