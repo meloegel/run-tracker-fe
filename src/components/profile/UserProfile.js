@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
+import ProfileCard from '../common/ProfileCard';
 
 const initialDetails = {
     username: '',
@@ -86,6 +87,8 @@ const UserProfile = () => {
                 <div />
                 <button className="update-user-button">Update</button>
             </form>
+            <br></br>
+            <ProfileCard />
         </div>
     )
 }

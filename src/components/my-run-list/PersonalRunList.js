@@ -7,7 +7,7 @@ const PersonalRunList = () => {
 
     return (
         <div>
-            {runList.map(run => (
+            {runList.slice(0).reverse().map(run => (
                 <MyRunCard
                     key={run.runTimeID}
                     run={run}

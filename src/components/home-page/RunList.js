@@ -7,7 +7,7 @@ const RunList = () => {
 
     return (
         <div>
-            {runList.map(run => (
+            {runList.slice(0).reverse().map(run => (
                 <RunCard
                     key={run.id}
                     run={run}
