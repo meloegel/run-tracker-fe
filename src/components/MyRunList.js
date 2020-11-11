@@ -14,8 +14,9 @@ const MyRunList = () => {
         setUserId({
             userId: window.localStorage.getItem('userId')
         })
+        setRunList([])
         axiosWithAuth()
-            .get(`/api/auth/run-tracker/runs/${userId.userId}`)
+            .get(`/api/auth/run-tracker/user/${userId.userId}`)
             .then(res => setRunList(res.data))
             .catch(err => console.log(err))
     }

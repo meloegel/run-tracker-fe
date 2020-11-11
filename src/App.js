@@ -36,6 +36,7 @@ function App() {
               <NavLink to='/'>Home</NavLink>
               <NavLink to='/register'>Register</NavLink>
               <NavLink to='/login'>Sign In</NavLink>
+              <NavLink to='/my-run-list'>My Run List</NavLink>
               <NavLink to='/account'>Account Settings</NavLink>
               <NavLink to='/' onClick={handleLogout}>Logout</NavLink>
             </nav>

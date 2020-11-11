@@ -9,13 +9,14 @@ const initalDetails = {
     distance: '',
     pace: '',
     description: '',
-    publish: false,
+    publish: '',
 };
 
 const AddRun = () => {
     const { push } = useHistory();
     const [details, setDetails] = useState(initalDetails)
     const { runList, setRunList } = useContext(RunTrackerContext);
+    const [publish, setPublish] = useState(false)
     const { userId } = useContext(UserContext);
 
     const handleChange = evt => {
@@ -25,14 +26,22 @@ const AddRun = () => {
         });
     };
 
+    const handleCheckbox = evt => {
+        setDetails({
+            ...details,
+            publish: !publish
+        })
+    }
+
     const handleSubmit = evt => {
+        console.log(details)
         evt.preventDefault();
         axiosWithAuth()
             .post('/api/auth/run-tracker', details)
             .then(res => {
                 console.log(res);
                 setRunList([...runList, details]);
-                push('/').reset()
+                push('/my-run-list').reset()
             })
             .catch(error => console.log(error))
     }
@@ -75,27 +84,9 @@ const AddRun = () => {
                 <div />
                 <div />
                 <input
-                    type="text"
-                    name="coverArt"
-                    onChange={handleChange}
-                    placeholder="Cover Art"
-                    value={details.coverArt}
-                />
-                <div />
-                <div />
-                <input
-                    type="text"
-                    name="description"
-                    onChange={handleChange}
-                    placeholder="Description"
-                    value={details.description}
-                />
-                <div />
-                <div />
-                <input
-                    type="raido"
+                    type="checkbox"
                     name="publish"
-                    onChange={handleChange}
+                    onChange={handleCheckbox}
                     id="publish"
                     value={details.publish}
                 />
@@ -107,7 +98,8 @@ const AddRun = () => {
                     type="text"
                     name="userId"
                     onChange={handleChange}
-                    value={userId.userId}
+                    value={details.userId}
+                    placeholder={userId.userId}
                 />
                 <div />
                 <br />
