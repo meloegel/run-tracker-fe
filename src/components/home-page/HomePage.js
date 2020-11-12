@@ -3,7 +3,8 @@ import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../../contexts/RunTrackerContext';
 import RunList from '../home-page/RunList';
-import ProfileCard from '../common/ProfileCard'
+import ProfileCard from '../common/ProfileCard';
+import Popup from 'reactjs-popup';
 
 const HomePage = () => {
     const { push } = useHistory();
@@ -42,6 +43,23 @@ const HomePage = () => {
                 </div>
 
             }
+            <div>
+                <Popup trigger={
+                    <button className="button"> About </button>} modal>
+                    {close => (
+                        <div className="modal">
+                            <a className="close" onClick={close}>&times;</a>
+                            <div className="aboutTitle"> About Run Tracker </div>
+                            <div className="aboutPopupDiv">
+                                <p className='aboutPopupContent'> About Run Tracker content </p>
+                            </div>
+                            <div className="buttonPopup">
+                                <button onClick={() => { close(); }}>Close</button>
+                            </div>
+                        </div>
+                    )}
+                </Popup>
+            </div>
             <h1>Run Tracker</h1>
             <div>
                 <RunList />
