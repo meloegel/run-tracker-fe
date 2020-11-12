@@ -31,8 +31,10 @@ const HomePage = () => {
     return (
         <div>
             {userId.userId == null ?
-                <div>
+                <div className='loginRegister'>
                     <button onClick={() => push('/register')}>Make account here!</button>
+                    <p>Or</p>
+                    <button onClick={() => push('/login')}>Login</button>
                 </div>
                 :
                 <div className='homePageProfileCard'>

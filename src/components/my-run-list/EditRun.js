@@ -35,12 +35,21 @@ const EditRun = () => {
         })
         console.log(details)
     }
+    console.log(details.publish)
+
+    const handleCheckBoxCheck = () => {
+        if (details.publish === 1) {
+            return 'true'
+        } else {
+            return 'false'
+        }
+    }
 
     const handleSubmit = evt => {
         console.log(details)
         evt.preventDefault();
         axiosWithAuth()
-            .post('/api/auth/run-tracker', details)
+            .put(`/api/auth/run-tracker/${runInfo.runInfo}`, details)
             .then(res => {
                 console.log(res);
                 push('/my-run-list').reset()
@@ -99,6 +108,7 @@ const EditRun = () => {
                     type="checkbox"
                     name="publish"
                     onChange={handleCheckbox}
+                    checked={handleCheckBoxCheck}
                     id="publish"
                     value={details.publish}
                 />
@@ -115,7 +125,7 @@ const EditRun = () => {
                 />
                 <div />
                 <br />
-                <button className="add-button">Add New Run</button>
+                <button className="add-button">Edit Run</button>
             </form>
         </div>
     )
