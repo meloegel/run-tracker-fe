@@ -1,4 +1,3 @@
-import { getNodeText } from '@testing-library/react';
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
@@ -7,8 +6,7 @@ import RunContext from '../../contexts/RunContext';
 
 const MyRunCard = ({ run }) => {
     const { push } = useHistory();
-    const { runInfo, setRunInfo } = useContext(RunContext)
-    console.log(run)
+    const { setRunInfo } = useContext(RunContext)
 
     const handleDelete = () => {
         axiosWithAuth()

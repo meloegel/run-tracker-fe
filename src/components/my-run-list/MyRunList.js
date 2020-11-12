@@ -7,7 +7,7 @@ import PersonalRunList from './PersonalRunList';
 
 const MyRunList = () => {
     const { push } = useHistory();
-    const { runList, setRunList } = useContext(RunTrackerContext);
+    const { setRunList } = useContext(RunTrackerContext);
     const { userId, setUserId } = useContext(UserContext);
 
     const getUserRuns = () => {

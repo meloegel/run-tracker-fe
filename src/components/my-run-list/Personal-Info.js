@@ -21,11 +21,10 @@ const PersonalInfo = () => {
         axiosWithAuth()
             .get(`api/run-tracker/user/${userId.userId}`)
             .then(res => {
-                console.log(res)
                 setUserInfo(res.data)
             })
             .catch(err => console.log(err))
-    }, [])
+    }, [userId.userId, setUserId])
 
     return (
         <div>

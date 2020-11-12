@@ -35,15 +35,6 @@ const EditRun = () => {
         })
         console.log(details)
     }
-    console.log(details.publish)
-
-    const handleCheckBoxCheck = () => {
-        if (details.publish === 1) {
-            return 'true'
-        } else {
-            return 'false'
-        }
-    }
 
     const handleSubmit = evt => {
         console.log(details)
@@ -65,7 +56,7 @@ const EditRun = () => {
                 setDetails(res.data);
             })
             .catch(err => console.log(err));
-    }, []);
+    }, [runInfo.runInfo]);
 
     return (
         <div >

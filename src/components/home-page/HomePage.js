@@ -7,12 +7,12 @@ import ProfileCard from '../common/ProfileCard'
 
 const HomePage = () => {
     const { push } = useHistory();
-    const { runList, setRunList } = useContext(RunTrackerContext);
+    const { setRunList } = useContext(RunTrackerContext);
     const [userId, setUserId] = useState({
         userId: window.localStorage.getItem('userId')
     });
 
-    console.log('user id:', userId)
+
 
     const getAllPublishedRuns = () => {
         axiosWithAuth()
