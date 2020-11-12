@@ -87,12 +87,19 @@ const UserProfile = () => {
                     type="text"
                     variant="filled"
                     name="avatar"
+                    style={{ width: '25.3ch' }}
+                    multiline
+                    rowsMax={10}
                     onChange={handleChange}
                     label="Avatar"
                     value={details.avatar}
                 />
                 <div />
-                <button className="update-user-button">Update</button>
+                <br></br>
+                <Button
+                    variant="contained"
+                    className="update-user-button"
+                >Update</Button>
             </form>
             <br></br>
             <div className='profilePreview'>

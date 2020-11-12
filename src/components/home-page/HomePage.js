@@ -5,6 +5,7 @@ import RunTrackerContext from '../../contexts/RunTrackerContext';
 import RunList from '../home-page/RunList';
 import ProfileCard from '../common/ProfileCard';
 import Popup from 'reactjs-popup';
+import Button from '@material-ui/core/Button';
 
 const HomePage = () => {
     const { push } = useHistory();
@@ -33,9 +34,18 @@ const HomePage = () => {
         <div>
             {userId.userId == null ?
                 <div className='loginRegister'>
-                    <button onClick={() => push('/register')}>Make account here!</button>
+                    <Button
+                        style={{ height: '4.5vh' }}
+                        variant="contained"
+                        onClick={() => push('/register')}
+                    >Make account here!</Button>
                     <p>Or</p>
-                    <button onClick={() => push('/login')}>Login</button>
+                    <Button
+                        style={{ height: '4.5vh' }}
+                        variant="contained"
+                        size='small'
+                        onClick={() => push('/login')}
+                    >Login</Button>
                 </div>
                 :
                 <div className='homePageProfileCard'>
@@ -45,7 +55,10 @@ const HomePage = () => {
             }
             <div>
                 <Popup trigger={
-                    <button className="button"> About </button>} modal>
+                    <Button
+                        style={{ height: '4.5vh' }}
+                        variant="contained"
+                        className="button"> About </Button>} modal>
                     {close => (
                         <div className="modal">
                             <a className="close" onClick={close}>&times;</a>

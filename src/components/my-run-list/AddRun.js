@@ -88,7 +88,9 @@ const AddRun = () => {
                 <TextField
                     type="text"
                     variant="filled"
-                    fullWidth
+                    style={{ width: '25.3ch' }}
+                    multiline
+                    rowsMax={6}
                     name="description"
                     onChange={handleChange}
                     label="Description"
