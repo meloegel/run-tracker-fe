@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
 import RunContext from '../../contexts/RunContext';
+import TextField from '@material-ui/core/TextField';
 
 const initalDetails = {
     runTime: '',
@@ -61,36 +62,41 @@ const EditRun = () => {
     return (
         <div >
             <h2>Edit Run</h2>
-            <form onSubmit={handleSubmit}>
-                <input
+            <form onSubmit={handleSubmit} className='editRunForm'>
+                <TextField
                     type="text"
+                    variant="filled"
                     name="runTime"
                     onChange={handleChange}
-                    placeholder="Run Time"
+                    label="Run Time"
                     value={details.runTime}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="distance"
                     onChange={handleChange}
-                    placeholder="Distance"
+                    label="Distance"
                     value={details.distance}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
                     name="pace"
+                    variant="filled"
                     onChange={handleChange}
-                    placeholder="Pace"
+                    label="Pace"
                     value={details.pace}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="description"
                     onChange={handleChange}
-                    placeholder="Description"
+                    fullWidth
+                    label="Description"
                     value={details.description}
                 />
                 <div />

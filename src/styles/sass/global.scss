@@ -17,9 +17,9 @@ h1 {
 .runCard {
   border: 1px solid black;
 }
-// #idInput {
-//   display: none;
-// }
+#idInput {
+  display: none;
+}
 
 .profileCard {
   margin: 0 auto;
@@ -94,4 +94,9 @@ h1 {
 }
 [data-popup="tooltip"].popup-overlay {
   background: transparent;
+}
+
+.editRunForm {
+  width: 50%;
+  margin: 0 auto;
 }

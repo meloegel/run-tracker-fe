@@ -52,11 +52,15 @@ function App() {
           <RunContext.Provider value={{ runInfo, setRunInfo }}>
             <div className="App">
               <nav>
-                <NavLink className='nav' to='/'>Home</NavLink>
-                <NavLink className='nav' to='/register'>Register</NavLink>
-                <NavLink className='nav' to='/login'>Sign In</NavLink>
-                <NavLink onClick={handleOnClick} className='nav' to='/my-run-list'>My Run List</NavLink>
-                <NavLink onClick={handleOnClick} className='nav' to='/account'>Account Settings</NavLink>
+                <NavLink className='nav' to='/'>Run Tracker</NavLink>
+                <NavLink
+                  onClick={handleOnClick}
+                  className='nav'
+                  to='/my-run-list'>My Run List</NavLink>
+                <NavLink
+                  onClick={handleOnClick}
+                  className='nav'
+                  to='/account'>Account Settings</NavLink>
                 <NavLink className='nav' to='/' onClick={handleLogout}>Logout</NavLink>
               </nav>
               <div>
