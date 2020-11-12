@@ -3,6 +3,10 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import PersonalInfo from './Personal-Info';
 import RunContext from '../../contexts/RunContext';
+import Typography from '@material-ui/core/Typography';
+import CardContent from '@material-ui/core/CardContent';
+import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
 
 const MyRunCard = ({ run }) => {
     const { push } = useHistory();
@@ -38,17 +42,27 @@ const MyRunCard = ({ run }) => {
     }
 
     return (
-        <div className='runCard'>
-            <h2 className='runTime'>Run Time: {run.runTime}</h2>
-            <h2 className='distance'>Distance: {run.distance}</h2>
-            <h2 className='pace'>Pace: {run.pace}</h2>
-            <h2 className='posted'>Posted: {run.timePosted}</h2>
-            <h2 className='publish'>Published: {formatPublish(run.publish)}</h2>
-            <h2 className='description'>Description: {run.description}</h2>
-            <PersonalInfo />
-            <button onClick={handleConfirm}>Delete Run</button>
-            <button onClick={handleEdit}>Edit Run</button>
-        </div>
+        <Card className='runCard'>
+            <CardContent>
+                <Typography className='runTime'>Run Time: {run.runTime}</Typography>
+                <Typography className='distance'>Distance: {run.distance}</Typography>
+                <Typography className='pace'>Pace: {run.pace}</Typography>
+                <Typography className='posted'>Posted: {run.timePosted}</Typography>
+                <Typography className='publish'>Published: {formatPublish(run.publish)}</Typography>
+                <Typography className='description'>Description: {run.description}</Typography>
+                <PersonalInfo />
+                <Button
+                    style={{ height: '4.5vh' }}
+                    variant="contained"
+                    onClick={handleConfirm}
+                >Delete Run</Button>
+                <Button
+                    style={{ height: '4.5vh' }}
+                    variant="contained"
+                    onClick={handleEdit}
+                >Edit Run</Button>
+            </CardContent>
+        </Card>
     )
 }
 

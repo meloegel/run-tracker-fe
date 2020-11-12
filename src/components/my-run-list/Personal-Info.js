@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
-
+import Typography from '@material-ui/core/Typography';
 
 const initialDetails = {
     username: '',
@@ -28,8 +28,8 @@ const PersonalInfo = () => {
 
     return (
         <div>
-            <h2 className='username'>Username: {userInfo.username}</h2>
-            <h2 className='location'>Location: {userInfo.location}</h2>
+            <Typography className='username'>Username: {userInfo.username}</Typography>
+            <Typography className='location'>Location: {userInfo.location}</Typography>
             <img src={userInfo.avatar} alt='Users Avatar' className='avatarImg' />
         </div>
     )

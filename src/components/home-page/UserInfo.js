@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
 
 const initialDetails = {
     username: '',

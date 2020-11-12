@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import RunTrackerContext from '../../contexts/RunTrackerContext';
 import UserContext from '../../contexts/UserContext';
 import PersonalRunList from './PersonalRunList';
+import Button from '@material-ui/core/Button';
 
 const MyRunList = () => {
     const { push } = useHistory();
@@ -29,9 +30,14 @@ const MyRunList = () => {
         <div>
             <h1>My Run List</h1>
             <div>
+                <Button
+                    style={{ height: '4.5vh', margin: '1rem auto' }}
+                    variant="contained"
+                    onClick={() => push('/add-run')}
+                >Add Run</Button>
                 <PersonalRunList />
             </div>
-            <button onClick={() => push('/add-run')}>Add Run</button>
+
         </div>
     )
 }
