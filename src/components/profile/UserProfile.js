@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
 import ProfileCard from '../common/ProfileCard';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const initialDetails = {
     username: '',
@@ -53,36 +55,40 @@ const UserProfile = () => {
         <div>
             <ProfileCard />
             <h2 id='updateUserInfo'>Update Account Information</h2>
-            <form id='userInfoForm' onSubmit={handleSubmit}>
-                <input
+            <form onSubmit={handleSubmit} className='editUserInfoForm'>
+                <TextField
                     type="text"
+                    variant="filled"
                     name="username"
                     onChange={handleChange}
-                    placeholder="Username"
+                    label="Username"
                     value={details.username}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="email"
                     onChange={handleChange}
-                    placeholder="Email"
+                    label="Email"
                     value={details.email}
                 />
                 <br />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="location"
                     onChange={handleChange}
-                    placeholder="Location"
+                    label="Location"
                     value={details.location}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="avatar"
                     onChange={handleChange}
-                    placeholder="Avatar"
+                    label="Avatar"
                     value={details.avatar}
                 />
                 <div />

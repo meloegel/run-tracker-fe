@@ -3,6 +3,11 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
 import RunTrackerContext from '../../contexts/RunTrackerContext';
+import TextField from '@material-ui/core/TextField';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import { Checkbox } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 const initalDetails = {
     runTime: '',
@@ -52,43 +57,50 @@ const AddRun = () => {
     return (
         <div >
             <h2>Add A Run</h2>
-            <form onSubmit={handleSubmit}>
-                <input
+            <form onSubmit={handleSubmit} className='addRunForm'>
+                <TextField
                     type="text"
+                    variant="filled"
                     name="runTime"
                     onChange={handleChange}
-                    placeholder="Run Time"
+                    label="Run Time"
                     value={details.runTime}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="distance"
                     onChange={handleChange}
-                    placeholder="Distance"
+                    label="Distance"
                     value={details.distance}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
                     name="pace"
                     onChange={handleChange}
-                    placeholder="Pace"
+                    label="Pace"
                     value={details.pace}
                 />
                 <div />
-                <input
+                <TextField
                     type="text"
+                    variant="filled"
+                    fullWidth
                     name="description"
                     onChange={handleChange}
-                    placeholder="Description"
+                    label="Description"
                     value={details.description}
                 />
                 <div />
                 <div />
-                <input
+                <Checkbox
+                    icon={<FavoriteBorder />}
                     type="checkbox"
                     name="publish"
+                    label='Publish'
                     onChange={handleCheckbox}
                     id="publish"
                     value={details.publish}
@@ -106,7 +118,10 @@ const AddRun = () => {
                 />
                 <div />
                 <br />
-                <button className="add-button">Add New Run</button>
+                <Button
+                    variant="contained"
+                    className="add-button"
+                >Add New Run</Button>
             </form>
         </div>
     )

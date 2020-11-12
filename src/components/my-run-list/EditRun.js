@@ -67,44 +67,49 @@ const EditRun = () => {
         <div >
             <h2>Edit Run</h2>
             <form onSubmit={handleSubmit} className='editRunForm'>
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="runTime"
-                    onChange={handleChange}
-                    label="Run Time"
-                    value={details.runTime}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="distance"
-                    onChange={handleChange}
-                    label="Distance"
-                    value={details.distance}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    name="pace"
-                    variant="filled"
-                    onChange={handleChange}
-                    label="Pace"
-                    value={details.pace}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="description"
-                    onChange={handleChange}
-                    fullWidth
-                    label="Description"
-                    value={details.description}
-                />
-                <div />
-                <div />
+                <div className='topForm'>
+                    <div>
+                        <TextField
+                            type="text"
+                            variant="filled"
+                            style={{ margin: '0 0 2rem 0' }}
+                            name="runTime"
+                            onChange={handleChange}
+                            label="Run Time"
+                            value={details.runTime}
+                        />
+                        <TextField
+                            type="text"
+                            variant="filled"
+                            name="distance"
+                            onChange={handleChange}
+                            label="Distance"
+                            value={details.distance}
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            style={{ margin: '0 0 2rem 0' }}
+                            name="pace"
+                            variant="filled"
+                            onChange={handleChange}
+                            label="Pace"
+                            value={details.pace}
+                        />
+                        <TextField
+                            type="text"
+                            variant="filled"
+                            name="description"
+                            onChange={handleChange}
+                            style={{ width: '25.3ch' }}
+                            multiline
+                            rowsMax={6}
+                            label="Description"
+                            value={details.description}
+                        />
+                    </div>
+                </div>
                 <Checkbox
                     icon={<FavoriteBorder />}
                     type="checkbox"
@@ -114,10 +119,10 @@ const EditRun = () => {
                     onChange={handleCheckbox}
                     checked={details.publish}
                     id="publish"
+                    style={{ margin: '2rem 0 2rem 0' }}
                     value={details.publish}
                 />
                 <label for='publish'>Publish</label>
-                <div />
                 <div />
                 <input
                     id='idInput'
