@@ -25,10 +25,24 @@ function App() {
   });
 
   const handleLogout = () => {
-    localStorage.clear();
-    window.location.reload()
-    SetIsLoggedIn(false);
-    setUserId('');
+    if (userId.userId == null) {
+      handleAlert()
+    } else {
+      localStorage.clear();
+      window.location.reload()
+      SetIsLoggedIn(false);
+      setUserId('');
+    }
+  }
+
+  const handleOnClick = () => {
+    if (userId.userId == null) {
+      handleAlert()
+    }
+  }
+
+  const handleAlert = () => {
+    window.alert('You need to be logged in to do that')
   }
 
   return (
@@ -41,8 +55,8 @@ function App() {
                 <NavLink className='nav' to='/'>Home</NavLink>
                 <NavLink className='nav' to='/register'>Register</NavLink>
                 <NavLink className='nav' to='/login'>Sign In</NavLink>
-                <NavLink className='nav' to='/my-run-list'>My Run List</NavLink>
-                <NavLink className='nav' to='/account'>Account Settings</NavLink>
+                <NavLink onClick={handleOnClick} className='nav' to='/my-run-list'>My Run List</NavLink>
+                <NavLink onClick={handleOnClick} className='nav' to='/account'>Account Settings</NavLink>
                 <NavLink className='nav' to='/' onClick={handleLogout}>Logout</NavLink>
               </nav>
               <div>
