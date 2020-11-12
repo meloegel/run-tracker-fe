@@ -4,6 +4,10 @@ import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import UserContext from '../../contexts/UserContext';
 import RunContext from '../../contexts/RunContext';
 import TextField from '@material-ui/core/TextField';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
+import { Checkbox } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 const initalDetails = {
     runTime: '',
@@ -101,9 +105,12 @@ const EditRun = () => {
                 />
                 <div />
                 <div />
-                <input
+                <Checkbox
+                    icon={<FavoriteBorder />}
                     type="checkbox"
                     name="publish"
+                    checkedIcon={<Favorite />}
+                    label='Publish'
                     onChange={handleCheckbox}
                     checked={details.publish}
                     id="publish"
@@ -122,7 +129,10 @@ const EditRun = () => {
                 />
                 <div />
                 <br />
-                <button className="add-button">Edit Run</button>
+                <Button
+                    variant="contained"
+                    className="add-button"
+                >Edit Run</Button>
             </form>
         </div>
     )
