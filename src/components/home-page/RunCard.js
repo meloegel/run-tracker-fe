@@ -1,20 +1,25 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import UserInfo from '../home-page/UserInfo';
+import Typography from '@material-ui/core/Typography';
+import CardContent from '@material-ui/core/CardContent';
+import Card from '@material-ui/core/Card';
 
 const RunCard = ({ run }) => {
     const { push } = useHistory();
 
     return (
-        <div className='runCard'>
-            <h2 className='runTime'>Run Time: {run.runTime}</h2>
-            <h2 className='distance'>Distance: {run.distance}</h2>
-            <h2 className='pace'>Pace: {run.pace}</h2>
-            <h2 className='posted'>Posted: {run.timePosted}</h2>
-            <h2 className='description'>Description: {run.description}</h2>
-            <h2 className='user'>User: {run.userId}</h2>
-            <UserInfo userId={run.userId} />
-        </div>
+        <Card className='runCard'>
+            <CardContent>
+                <Typography className='runTime'>Run Time: {run.runTime}</Typography>
+                <Typography className='distance'>Distance: {run.distance}</Typography>
+                <Typography className='pace'>Pace: {run.pace}</Typography>
+                <Typography className='posted'>Posted: {run.timePosted}</Typography>
+                <Typography className='description'>Description: {run.description}</Typography>
+                <Typography className='user'>User: {run.userId}</Typography>
+                <UserInfo userId={run.userId} />
+            </CardContent>
+        </Card>
     )
 }
 
