@@ -105,7 +105,7 @@ const EditRun = () => {
                     type="checkbox"
                     name="publish"
                     onChange={handleCheckbox}
-                    checked={details.publish === 1 ? 'true' : 'false'}
+                    checked={details.publish}
                     id="publish"
                     value={details.publish}
                 />
