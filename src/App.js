@@ -74,13 +74,17 @@ function App() {
                     className="button"> About </Button>} modal>
                   {close => (
                     <div className="modal">
-                      <a className="close" onClick={close}>&times;</a>
                       <div className="aboutTitle"> About Run Tracker </div>
-                      <div className="aboutPopupDiv">
-                        <p className='aboutPopupContent'> About Run Tracker content </p>
+                      <div>
+                        <p className='aboutPopupContent'> Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has a passion for running as well as programming. Run Tracker keeps track of your run times and you able to post good runs to a main feed. Creating an account allows you to view your runs, edit and delete your runs and edit your profile. Thank you for using Run Tracker and Just Keep Running! </p>
+                        <p><a className='gitHubLink' href='https://github.com/meloegel/run-tracker-fe'>GitHub Link</a></p>
                       </div>
                       <div className="buttonPopup">
-                        <button onClick={() => { close(); }}>Close</button>
+                        <Button
+                          style={{ height: '4.5vh' }}
+                          variant="contained"
+                          onClick={() => { close(); }}
+                        >Close</Button>
                       </div>
                     </div>
                   )}

@@ -40,18 +40,22 @@ nav :hover {
 .aboutPopup {
   padding: 1rem;
 }
-
 .aboutTitle {
   text-align: center;
   color: black;
   font-size: 3.2rem;
   font-family: "Staatliches", cursive;
 }
-
+.gitHubLink {
+  text-decoration: underline;
+  color: blue;
+}
+.gitHubLink :visited {
+  color: blue;
+}
 .modal {
   background-color: darkgray;
 }
-
 .aboutPopupContent {
   color: black;
   width: 95%;
@@ -70,14 +74,6 @@ nav :hover {
   background: rgb(255, 255, 255);
   width: 50%;
   padding: 5px;
-}
-.popup-arrow {
-  color: black;
-}
-.close {
-  color: black;
-  padding: 0.5rem;
-  font-size: 1.5rem;
 }
 .popup-overlay {
   background: rgba(0, 0, 0, 0.5);
