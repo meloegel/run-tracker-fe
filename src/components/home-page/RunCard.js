@@ -10,14 +10,18 @@ const RunCard = ({ run }) => {
 
     return (
         <Card className='runCard'>
-            <CardContent>
-                <Typography className='runTime'>Run Time: {run.runTime}</Typography>
-                <Typography className='distance'>Distance: {run.distance}</Typography>
-                <Typography className='pace'>Pace: {run.pace}</Typography>
-                <Typography className='posted'>Posted: {run.timePosted}</Typography>
-                <Typography className='description'>Description: {run.description}</Typography>
-                <Typography className='user'>User: {run.userId}</Typography>
-                <UserInfo userId={run.userId} />
+            <CardContent id='cardContent'>
+                <div>
+                    <UserInfo userId={run.userId} />
+                </div>
+                <div>
+                    <Typography className='runTime'>Run Time: {run.runTime}</Typography>
+                    <Typography className='distance'>Distance: {run.distance}</Typography>
+                    <Typography className='pace'>Pace: {run.pace}</Typography>
+                    <Typography className='posted'>Posted: {run.timePosted}</Typography>
+                    <Typography className='description'>Description: {run.description}</Typography>
+                    <Typography className='user'>User: {run.userId}</Typography>
+                </div>
             </CardContent>
         </Card>
     )

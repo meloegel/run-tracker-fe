@@ -16,6 +16,8 @@ h1 {
 
 .runCard {
   border: 1px solid black;
+  width: 40%;
+  margin: 1rem auto;
 }
 #idInput {
   display: none;
@@ -106,4 +108,10 @@ h1 {
 }
 .topForm {
   display: flex;
+}
+
+#cardContent {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }

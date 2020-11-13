@@ -43,7 +43,7 @@ const MyRunCard = ({ run }) => {
 
     return (
         <Card className='runCard'>
-            <CardContent>
+            <CardContent >
                 <Typography className='runTime'>Run Time: {run.runTime}</Typography>
                 <Typography className='distance'>Distance: {run.distance}</Typography>
                 <Typography className='pace'>Pace: {run.pace}</Typography>
@@ -62,7 +62,7 @@ const MyRunCard = ({ run }) => {
                     onClick={handleEdit}
                 >Edit Run</Button>
             </CardContent>
-        </Card>
+        </Card >
     )
 }
 
