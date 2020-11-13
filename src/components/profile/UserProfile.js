@@ -45,8 +45,8 @@ const UserProfile = () => {
         axiosWithAuth()
             .put(`/api/auth/users/${userId.userId}`, details)
             .then(res => {
-                console.log(res)
-                push(`/account`)
+                window.alert('Sucessfully updated profile')
+                window.location.reload()
             })
             .catch(err => console.log(err))
     }
@@ -98,6 +98,7 @@ const UserProfile = () => {
                 <br></br>
                 <Button
                     variant="contained"
+                    onClick={handleSubmit}
                     className="update-user-button"
                 >Update</Button>
             </form>
