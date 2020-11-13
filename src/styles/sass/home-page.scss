@@ -1,8 +1,6 @@
 // Home Page //
 .loginRegister {
   padding: 0.5rem;
-  display: flex;
-  flex-direction: row-reverse;
 }
 .homePageBanner {
   width: 85%;
@@ -13,6 +11,8 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-color: lightgray;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 // Run Card //

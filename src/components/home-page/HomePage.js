@@ -39,7 +39,7 @@ const HomePage = () => {
                             variant="contained"
                             onClick={() => push('/register')}
                         >Make account here!</Button>
-                        <p>Or</p>
+                        <p >---</p>
                         <Button
                             style={{ height: '4.5vh' }}
                             variant="contained"

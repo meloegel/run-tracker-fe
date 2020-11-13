@@ -65,7 +65,7 @@ function App() {
                   to='/account'>Account Settings</NavLink>
                 <NavLink className='nav' to='/' onClick={handleLogout}>Logout</NavLink>
               </nav>
-              <div>
+              <div className='aboutPopup'>
                 <Popup trigger={
                   <Button
                     id='aboutButton'

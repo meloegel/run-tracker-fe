@@ -112,10 +112,11 @@ const UserProfile = () => {
             <br></br>
             <h2>Profile Preview</h2>
             <div className='profilePreview'>
-
-                <h2 className='username'>Username: {details.username}</h2>
-                <h2 className='email'>Email: {details.email}</h2>
-                <h2 className='location'>Location: {details.location}</h2>
+                <div>
+                    <h2 className='username'>Username: {details.username}</h2>
+                    <h2 className='email'>Email: {details.email}</h2>
+                    <h2 className='location'>Location: {details.location}</h2>
+                </div>
                 <img src={details.avatar} alt='Users Avatar' className='avatarImg' />
             </div>
             <br></br>

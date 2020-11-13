@@ -1,16 +1,14 @@
 // Edit Profile (User Profile) //@at-root
 
 .profilePreview {
+  background-color: white;
   width: 40%;
   margin: 0 auto;
   border: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 2rem 1rem;
 }
 
 //Register
-#resisterTooltip {
-  // position: absolute;
-  // padding: 1rem;
-  // bottom: 10rem;
-  font-size: 4rem;
-  width: 100%;
-}
