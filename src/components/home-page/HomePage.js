@@ -48,7 +48,7 @@ const HomePage = () => {
                         >Login</Button>
                     </div>
                     :
-                    <div className='homePageProfileCard'>
+                    <div className='profileCard'>
                         <div>
                             <ProfileCard />
                         </div>

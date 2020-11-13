@@ -53,48 +53,55 @@ const UserProfile = () => {
 
     return (
         <div>
-            <ProfileCard />
+            <div className='profileCard'>
+                <ProfileCard />
+            </div>
             <h2 id='updateUserInfo'>Update Account Information</h2>
             <form onSubmit={handleSubmit} className='editUserInfoForm'>
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="username"
-                    onChange={handleChange}
-                    label="Username"
-                    value={details.username}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="email"
-                    onChange={handleChange}
-                    label="Email"
-                    value={details.email}
-                />
-                <br />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="location"
-                    onChange={handleChange}
-                    label="Location"
-                    value={details.location}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="avatar"
-                    style={{ width: '25.3ch' }}
-                    multiline
-                    rowsMax={10}
-                    onChange={handleChange}
-                    label="Avatar"
-                    value={details.avatar}
-                />
-                <div />
+                <div className='topForm'>
+                    <div>
+                        <TextField
+                            type="text"
+                            style={{ margin: '0 0 2rem 0' }}
+                            variant="filled"
+                            name="username"
+                            onChange={handleChange}
+                            label="Username"
+                            value={details.username}
+                        />
+                        <TextField
+                            type="text"
+                            style={{ margin: '0 0 2rem 0' }}
+                            variant="filled"
+                            name="email"
+                            onChange={handleChange}
+                            label="Email"
+                            value={details.email}
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            style={{ margin: '0 0 2rem 0' }}
+                            variant="filled"
+                            name="location"
+                            onChange={handleChange}
+                            label="Location"
+                            value={details.location}
+                        />
+                        <TextField
+                            type="text"
+                            style={{ margin: '0 0 2rem 0', width: '25.3ch' }}
+                            variant="filled"
+                            name="avatar"
+                            multiline
+                            rowsMax={10}
+                            onChange={handleChange}
+                            label="Avatar"
+                            value={details.avatar}
+                        />
+                    </div>
+                </div>
                 <br></br>
                 <Button
                     variant="contained"
@@ -103,7 +110,9 @@ const UserProfile = () => {
                 >Update</Button>
             </form>
             <br></br>
+            <h2>Profile Preview</h2>
             <div className='profilePreview'>
+
                 <h2 className='username'>Username: {details.username}</h2>
                 <h2 className='email'>Email: {details.email}</h2>
                 <h2 className='location'>Location: {details.location}</h2>
