@@ -10,6 +10,7 @@ import { Checkbox } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 
 const initalDetails = {
+    userId: '',
     runTime: '',
     distance: '',
     pace: '',
@@ -42,7 +43,10 @@ const AddRun = () => {
     }
 
     const handleSubmit = evt => {
-        console.log(details)
+        setDetails({
+            ...details,
+            userId: userId.userId
+        })
         evt.preventDefault();
         axiosWithAuth()
             .post('/api/auth/run-tracker', details)
@@ -110,18 +114,19 @@ const AddRun = () => {
                 <label for='publish'>Publish</label>
                 <div />
                 <div />
-                <input
+                <TextField
                     id='idInput'
+                    variant="filled"
                     type="text"
                     name="userId"
                     onChange={handleChange}
-                    value={details.userId}
-                    placeholder={userId.userId}
+                    value={userId.userId}
                 />
                 <div />
                 <br />
                 <Button
                     variant="contained"
+                    onClick={handleSubmit}
                     className="add-button"
                 >Add New Run</Button>
             </form>

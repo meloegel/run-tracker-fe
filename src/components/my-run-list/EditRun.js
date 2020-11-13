@@ -137,6 +137,7 @@ const EditRun = () => {
                 <Button
                     variant="contained"
                     className="add-button"
+                    onClick={handleSubmit}
                 >Edit Run</Button>
             </form>
         </div>
