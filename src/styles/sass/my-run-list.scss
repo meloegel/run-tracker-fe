@@ -22,3 +22,23 @@
   justify-content: center;
   align-items: center;
 }
+
+// My Run List //
+.totalDistanceRan {
+  position: absolute;
+  margin-left: 2rem;
+  width: 8%;
+  border-radius: 4rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-color: green;
+  border: 3px solid black;
+}
+#totalDistanceRan {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+#totalDistance {
+  font-size: 3rem;
+}

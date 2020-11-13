@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import './styles/sass/index.scss';
+import Popup from 'reactjs-popup';
+import Button from '@material-ui/core/Button';
 
 import UserContext from './contexts/UserContext';
 import RunTrackerContext from './contexts/RunTrackerContext';
@@ -63,6 +65,27 @@ function App() {
                   to='/account'>Account Settings</NavLink>
                 <NavLink className='nav' to='/' onClick={handleLogout}>Logout</NavLink>
               </nav>
+              <div>
+                <Popup trigger={
+                  <Button
+                    id='aboutButton'
+                    style={{ height: '4.5vh' }}
+                    variant="contained"
+                    className="button"> About </Button>} modal>
+                  {close => (
+                    <div className="modal">
+                      <a className="close" onClick={close}>&times;</a>
+                      <div className="aboutTitle"> About Run Tracker </div>
+                      <div className="aboutPopupDiv">
+                        <p className='aboutPopupContent'> About Run Tracker content </p>
+                      </div>
+                      <div className="buttonPopup">
+                        <button onClick={() => { close(); }}>Close</button>
+                      </div>
+                    </div>
+                  )}
+                </Popup>
+              </div>
               <div>
                 <Switch>
                   <Route exact path='/' component={HomePage} />
