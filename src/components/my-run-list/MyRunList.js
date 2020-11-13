@@ -21,17 +21,16 @@ const MyRunList = () => {
             .then(res => setRunList(res.data))
             .catch(err => console.log(err))
     }
-    console.log(runList)
+
     useEffect(() => {
         getUserRuns(userId.userId)
     }, [userId.userId])
 
-    var totalDistance = 0
 
+    var totalDistance = 0
     runList.forEach(run => {
         totalDistance = run.distance + totalDistance
     })
-
 
     return (
         <div>
@@ -45,7 +44,6 @@ const MyRunList = () => {
                 >Add Run</Button>
                 <PersonalRunList />
             </div>
-
         </div>
     )
 }

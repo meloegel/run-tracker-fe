@@ -81,6 +81,12 @@ const HomePage = () => {
             <div>
                 <RunList />
             </div>
+            <Button
+                style={{ height: '4.5vh' }}
+                variant="contained"
+                size='small'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >To top</Button>
         </div>
     )
 }
