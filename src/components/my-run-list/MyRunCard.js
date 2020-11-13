@@ -43,24 +43,28 @@ const MyRunCard = ({ run }) => {
 
     return (
         <Card className='runCard'>
-            <CardContent >
-                <Typography className='runTime'>Run Time: {run.runTime}</Typography>
-                <Typography className='distance'>Distance: {run.distance}</Typography>
-                <Typography className='pace'>Pace: {run.pace}</Typography>
-                <Typography className='posted'>Posted: {run.timePosted}</Typography>
-                <Typography className='publish'>Published: {formatPublish(run.publish)}</Typography>
-                <Typography className='description'>Description: {run.description}</Typography>
-                <PersonalInfo />
-                <Button
-                    style={{ height: '4.5vh' }}
-                    variant="contained"
-                    onClick={handleConfirm}
-                >Delete Run</Button>
-                <Button
-                    style={{ height: '4.5vh' }}
-                    variant="contained"
-                    onClick={handleEdit}
-                >Edit Run</Button>
+            <CardContent className='myCardContent' >
+                <div>
+                    <PersonalInfo />
+                </div>
+                <div>
+                    <Typography className='runTime'>Run Time: {run.runTime}</Typography>
+                    <Typography className='distance'>Distance: {run.distance}</Typography>
+                    <Typography className='pace'>Pace: {run.pace}</Typography>
+                    <Typography className='posted'>Posted: {run.timePosted}</Typography>
+                    <Typography className='publish'>Published: {formatPublish(run.publish)}</Typography>
+                    <Typography className='description'>Description: {run.description}</Typography>
+                    <Button
+                        style={{ height: '4.5vh' }}
+                        variant="contained"
+                        onClick={handleConfirm}
+                    >Delete Run</Button>
+                    <Button
+                        style={{ height: '4.5vh' }}
+                        variant="contained"
+                        onClick={handleEdit}
+                    >Edit Run</Button>
+                </div>
             </CardContent>
         </Card >
     )
