@@ -23,11 +23,12 @@ h1 {
   display: none;
 }
 
-.profileCard {
+.profileCardContent {
   margin: 0 auto;
   border: 5px solid black;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 .profilePreview {
@@ -121,4 +122,8 @@ h1 {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+}
+#test {
+  border: 5px solid pink;
+  margin: 0 auto;
 }

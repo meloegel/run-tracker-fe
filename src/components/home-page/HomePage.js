@@ -49,7 +49,9 @@ const HomePage = () => {
                 </div>
                 :
                 <div className='homePageProfileCard'>
-                    <ProfileCard />
+                    <div>
+                        <ProfileCard />
+                    </div>
                 </div>
 
             }

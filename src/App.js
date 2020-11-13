@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import './styles/sass/index.scss';
 
+
 import UserContext from './contexts/UserContext';
 import RunTrackerContext from './contexts/RunTrackerContext';
 import RunContext from './contexts/RunContext';
