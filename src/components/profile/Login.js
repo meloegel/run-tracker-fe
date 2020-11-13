@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import loginSchema from '../../validation/loginSchema';
 import * as yup from 'yup';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 const initialFormValues = {
     username: '',
@@ -78,24 +80,30 @@ export default function Login() {
                 </div>
                 <div className="login form">
                     <h4>Login Information</h4>
-                    <label>Username:
-                        <input
-                            value={formValues.username}
-                            onChange={onInputChange}
-                            name="username"
-                            type="text"
-                        />
-                    </label>
-                    <label>Password:
-                        <input
-                            value={formValues.password}
-                            onChange={onInputChange}
-                            name="password"
-                            type="text"
-                        />
-                    </label>
+                    <TextField
+                        value={formValues.username}
+                        style={{ padding: '.5rem' }}
+                        onChange={onInputChange}
+                        variant="filled"
+                        label='Username'
+                        name="username"
+                        type="text"
+                    />
+                    <TextField
+                        value={formValues.password}
+                        style={{ padding: '.5rem' }}
+                        onChange={onInputChange}
+                        variant="filled"
+                        label='Password'
+                        name="password"
+                        type="text"
+                    />
                     <div id="login-btn">
-                        <button className="submit">Login</button>
+                        <Button
+                            onClick={onSubmit}
+                            variant="contained"
+                            className="submit"
+                        >Login</Button>
                     </div>
                     <div className="errors">
                         <div>{formErrors.username}</div>
@@ -103,6 +111,6 @@ export default function Login() {
                     </div>
                 </div>
             </form>
-        </div>
+        </div >
     );
 }

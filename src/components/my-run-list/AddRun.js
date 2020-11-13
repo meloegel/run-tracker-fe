@@ -104,6 +104,7 @@ const AddRun = () => {
                 <div />
                 <Checkbox
                     icon={<FavoriteBorder />}
+                    checkedIcon={<Favorite />}
                     type="checkbox"
                     name="publish"
                     label='Publish'
