@@ -10,120 +10,32 @@ html {
 h1 {
   font-family: "Permanent Marker", cursive;
 }
-.avatarImg {
-  max-width: 200px;
-}
 
-.runCard {
-  border: 1px solid black;
-  width: 40%;
-  margin: 1rem auto;
-}
+// Hides all id inputs from forms //
 #idInput {
   display: none;
 }
 
-.profileCardContent {
-  margin: 0 auto;
-  border: 5px solid black;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+// Nav //
+nav {
+  padding: 1rem;
+  font-size: 1.2rem;
 }
-
-.profilePreview {
-  width: 40%;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-.homePageProfileCard {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
 .nav {
   padding: 1rem;
-}
-
-.loginRegister {
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-// About Popup
-
-.aboutTitle {
-  text-align: center;
-  color: black;
-  font-size: 3.2rem;
-  font-family: "Staatliches", cursive;
-}
-
-.modal {
-  background-color: darkgray;
-}
-
-.aboutPopupContent {
-  color: black;
-  width: 95%;
-  margin: 0 auto;
-  padding: 0.8rem;
-  font-size: 1.45rem;
-  text-align: center;
-}
-.buttonPopup {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.5rem;
-}
-.popup-content {
-  margin: auto;
-  background: rgb(255, 255, 255);
-  width: 50%;
-  padding: 5px;
-}
-.popup-arrow {
+  text-decoration: none;
   color: black;
 }
-.close {
+.nav :visited {
   color: black;
-  padding: 0.5rem;
-  font-size: 1.5rem;
 }
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup="tooltip"].popup-overlay {
-  background: transparent;
+nav :hover {
+  background-color: lightgray;
+  color: white;
+  border-radius: 2.5rem;
 }
 
-.editRunForm {
-  width: 30%;
-  margin: 0 auto;
-}
-.addRunForm {
-  width: 50%;
-  margin: 0 auto;
-}
-.topForm {
-  display: flex;
-}
-
-#cardContent {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-.myCardContent {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-#test {
-  border: 5px solid pink;
-  margin: 0 auto;
+// Avatar image for all //
+.avatarImg {
+  max-width: 200px;
 }

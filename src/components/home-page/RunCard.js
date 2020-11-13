@@ -10,7 +10,7 @@ const RunCard = ({ run }) => {
 
     return (
         <Card className='runCard'>
-            <CardContent id='cardContent'>
+            <CardContent className='cardContent'>
                 <div>
                     <UserInfo userId={run.userId} />
                 </div>

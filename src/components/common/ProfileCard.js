@@ -31,7 +31,7 @@ const ProfileCard = () => {
     }, [userId.userId, setUserId]);
 
     return (
-        <div id='test'>
+        <div className='profileCard'>
             <Card >
                 <CardContent className='profileCardContent'>
                     <div >

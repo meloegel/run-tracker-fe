@@ -1,0 +1,73 @@
+// Home Page //
+.homePageProfileCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.loginRegister {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+// Home Page - About Popup //
+
+.aboutTitle {
+  text-align: center;
+  color: black;
+  font-size: 3.2rem;
+  font-family: "Staatliches", cursive;
+}
+
+.modal {
+  background-color: darkgray;
+}
+
+.aboutPopupContent {
+  color: black;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  font-size: 1.45rem;
+  text-align: center;
+}
+.buttonPopup {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: black;
+}
+.close {
+  color: black;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+
+// Run Card //
+
+.runCard {
+  border: 1px solid black;
+  width: 40%;
+  margin: 1rem auto;
+}
+
+.cardContent {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
