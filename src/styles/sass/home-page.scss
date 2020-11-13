@@ -9,6 +9,15 @@
   display: flex;
   flex-direction: row-reverse;
 }
+.homePageBanner {
+  width: 85%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-image: url("../img/run.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: lightgray;
+}
 
 // Home Page - About Popup //
 

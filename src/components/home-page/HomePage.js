@@ -32,32 +32,10 @@ const HomePage = () => {
 
     return (
         <div>
-            {userId.userId == null ?
-                <div className='loginRegister'>
-                    <Button
-                        style={{ height: '4.5vh' }}
-                        variant="contained"
-                        onClick={() => push('/register')}
-                    >Make account here!</Button>
-                    <p>Or</p>
-                    <Button
-                        style={{ height: '4.5vh' }}
-                        variant="contained"
-                        size='small'
-                        onClick={() => push('/login')}
-                    >Login</Button>
-                </div>
-                :
-                <div className='homePageProfileCard'>
-                    <div>
-                        <ProfileCard />
-                    </div>
-                </div>
-
-            }
-            <div>
+            <div id='test'>
                 <Popup trigger={
                     <Button
+                        id='aboutButton'
                         style={{ height: '4.5vh' }}
                         variant="contained"
                         className="button"> About </Button>} modal>
@@ -74,6 +52,30 @@ const HomePage = () => {
                         </div>
                     )}
                 </Popup>
+            </div>
+            <div className='homePageBanner'>
+                {userId.userId == null ?
+                    <div className='loginRegister'>
+                        <Button
+                            style={{ height: '4.5vh' }}
+                            variant="contained"
+                            onClick={() => push('/register')}
+                        >Make account here!</Button>
+                        <p>Or</p>
+                        <Button
+                            style={{ height: '4.5vh' }}
+                            variant="contained"
+                            size='small'
+                            onClick={() => push('/login')}
+                        >Login</Button>
+                    </div>
+                    :
+                    <div className='homePageProfileCard'>
+                        <div>
+                            <ProfileCard />
+                        </div>
+                    </div>
+                }
             </div>
             <h1>Run Tracker</h1>
             <div>
