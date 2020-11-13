@@ -3,6 +3,8 @@ import registrationSchema from '../../validation/registrationSchema';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import { useHistory } from 'react-router-dom';
 import * as yup from 'yup';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 const initalFormValues = {
     username: '',
@@ -79,37 +81,44 @@ export default function Registration() {
                 <div className="form inputs">
                     <h4>General Information</h4>
                     <form className="form container" onSubmit={onSubmit} disabled={disabled}>
-                        <label> Username:
-                            <input
-                                value={formValues.username}
-                                onChange={onInputChange}
-                                name="username"
-                                type="text"
-                            />
-                        </label>
-                        <label> Password:
-                            <input
-                                value={formValues.password}
-                                onChange={onInputChange}
-                                name="password"
-                                type="text"
-                            />
-                        </label>
-                        <label> Email:
-                            <input
-                                value={formValues.email}
-                                onChange={onInputChange}
-                                name="email"
-                                type="email"
-                            />
-                        </label>
+                        <TextField
+                            value={formValues.username}
+                            onChange={onInputChange}
+                            style={{ padding: '.5rem' }}
+                            variant="filled"
+                            label='Username'
+                            name="username"
+                            type="text"
+                        />
+                        <TextField
+                            value={formValues.password}
+                            style={{ padding: '.5rem' }}
+                            onChange={onInputChange}
+                            variant="filled"
+                            label='Password'
+                            name="password"
+                            type="text"
+                        />
+                        <TextField
+                            value={formValues.email}
+                            onChange={onInputChange}
+                            style={{ padding: '.5rem' }}
+                            variant="filled"
+                            label='Email'
+                            name="email"
+                            type="email"
+                        />
                         <div>
                             <div className="errors">
                                 <div>{formErrors.username}</div>
                                 <div>{formErrors.password}</div>
                                 <div>{formErrors.email}</div>
                             </div>
-                            <button className="submit">Submit</button>
+                            <Button
+                                onClick={onSubmit}
+                                variant="contained"
+                                className="submit"
+                            >Submit</Button>
                         </div>
                     </form>
                 </div>
