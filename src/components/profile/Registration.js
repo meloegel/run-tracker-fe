@@ -9,13 +9,15 @@ import TextField from '@material-ui/core/TextField';
 const initalFormValues = {
     username: '',
     password: '',
-    email: ''
+    email: '',
+    avatar: ''
 };
 
 const initalFormErrors = {
     username: '',
     password: '',
-    email: ''
+    email: '',
+    avatar: ''
 }
 
 const initalDisabled = true;
@@ -107,6 +109,18 @@ export default function Registration() {
                             label='Email'
                             name="email"
                             type="email"
+                        />
+                        <TextField
+                            value={formValues.avatar}
+                            style={{ padding: '.5rem', width: '25.3ch' }}
+                            onChange={onInputChange}
+                            multiline
+                            placeholder='http link'
+                            rowsMax={6}
+                            variant="filled"
+                            label='avatar'
+                            name="avatar"
+                            type="text"
                         />
                         <div>
                             <div className="errors">

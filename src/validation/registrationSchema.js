@@ -10,7 +10,9 @@ const registrationSchema = yup.object().shape({
         .min(4, 'Password must be at least four characters long')
         .required('Password is a required field'),
     email: yup.string()
-        .email('The email must be a valid email address')
+        .email('The email must be a valid email address'),
+    avatar: yup.string()
+
 })
 
 export default registrationSchema;
