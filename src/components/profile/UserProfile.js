@@ -56,58 +56,60 @@ const UserProfile = () => {
             <div className='profileCard'>
                 <ProfileCard />
             </div>
-            <h2 id='updateUserInfo'>Update Account Information</h2>
             <form onSubmit={handleSubmit} className='editUserInfoForm'>
-                <div className='topForm'>
-                    <div>
-                        <TextField
-                            type="text"
-                            style={{ margin: '0 0 2rem 0' }}
-                            variant="filled"
-                            name="username"
-                            onChange={handleChange}
-                            label="Username"
-                            value={details.username}
-                        />
-                        <TextField
-                            type="text"
-                            style={{ margin: '0 0 2rem 0' }}
-                            variant="filled"
-                            name="email"
-                            onChange={handleChange}
-                            label="Email"
-                            value={details.email}
-                        />
+                <div className='userProfile'>
+                    <h2 id='updateUserInfo'>Update Account Information</h2>
+                    <div className='topForm'>
+                        <div>
+                            <TextField
+                                type="text"
+                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                variant="filled"
+                                name="username"
+                                onChange={handleChange}
+                                label="Username"
+                                value={details.username}
+                            />
+                            <TextField
+                                type="text"
+                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                variant="filled"
+                                name="email"
+                                onChange={handleChange}
+                                label="Email"
+                                value={details.email}
+                            />
+                        </div>
+                        <div>
+                            <TextField
+                                type="text"
+                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                variant="filled"
+                                name="location"
+                                onChange={handleChange}
+                                label="Location"
+                                value={details.location}
+                            />
+                            <TextField
+                                type="text"
+                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                variant="filled"
+                                name="avatar"
+                                multiline
+                                rowsMax={10}
+                                onChange={handleChange}
+                                label="Avatar"
+                                value={details.avatar}
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            style={{ margin: '0 0 2rem 0' }}
-                            variant="filled"
-                            name="location"
-                            onChange={handleChange}
-                            label="Location"
-                            value={details.location}
-                        />
-                        <TextField
-                            type="text"
-                            style={{ margin: '0 0 2rem 0', width: '25.3ch' }}
-                            variant="filled"
-                            name="avatar"
-                            multiline
-                            rowsMax={10}
-                            onChange={handleChange}
-                            label="Avatar"
-                            value={details.avatar}
-                        />
-                    </div>
+                    <br></br>
+                    <Button
+                        variant="contained"
+                        onClick={handleSubmit}
+                        className="update-user-button"
+                    >Update</Button>
                 </div>
-                <br></br>
-                <Button
-                    variant="contained"
-                    onClick={handleSubmit}
-                    className="update-user-button"
-                >Update</Button>
             </form>
             <br></br>
             <h2>Profile Preview</h2>
