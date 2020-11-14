@@ -60,76 +60,84 @@ const AddRun = () => {
 
     return (
         <div >
-            <h2>Add A Run</h2>
             <form onSubmit={handleSubmit} className='addRunForm'>
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="runTime"
-                    onChange={handleChange}
-                    label="Run Time"
-                    value={details.runTime}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="distance"
-                    onChange={handleChange}
-                    label="Distance"
-                    value={details.distance}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    name="pace"
-                    onChange={handleChange}
-                    label="Pace"
-                    value={details.pace}
-                />
-                <div />
-                <TextField
-                    type="text"
-                    variant="filled"
-                    style={{ width: '25.3ch' }}
-                    multiline
-                    rowsMax={6}
-                    name="description"
-                    onChange={handleChange}
-                    label="Description"
-                    value={details.description}
-                />
-                <div />
-                <div />
-                <Checkbox
-                    icon={<FavoriteBorder />}
-                    checkedIcon={<Favorite />}
-                    type="checkbox"
-                    name="publish"
-                    label='Publish'
-                    onChange={handleCheckbox}
-                    id="publish"
-                    value={details.publish}
-                />
-                <label for='publish'>Publish</label>
-                <div />
-                <div />
-                <TextField
-                    id='idInput'
-                    variant="filled"
-                    type="text"
-                    name="userId"
-                    onChange={handleChange}
-                    value={userId.userId}
-                />
-                <div />
-                <br />
-                <Button
-                    variant="contained"
-                    onClick={handleSubmit}
-                    className="add-button"
-                >Add New Run</Button>
+                <div className='runForm'>
+                    <h2>Add A Run</h2>
+                    <div className='addRunFormInputs'>
+                        <div>
+                            <TextField
+                                type="text"
+                                variant="filled"
+                                style={{ padding: '.5rem', width: '30ch' }}
+                                name="runTime"
+                                onChange={handleChange}
+                                label="Run Time"
+                                value={details.runTime}
+                            />
+                            <TextField
+                                type="text"
+                                variant="filled"
+                                style={{ padding: '.5rem', width: '30ch' }}
+                                name="distance"
+                                onChange={handleChange}
+                                label="Distance"
+                                value={details.distance}
+                            />
+                        </div>
+                        <div>
+                            <TextField
+                                type="text"
+                                variant="filled"
+                                style={{ padding: '.5rem', width: '30ch' }}
+                                name="pace"
+                                onChange={handleChange}
+                                label="Pace"
+                                value={details.pace}
+                            />
+                            <TextField
+                                type="text"
+                                variant="filled"
+                                style={{ width: '30ch', padding: '.5rem' }}
+                                multiline
+                                rowsMax={6}
+                                name="description"
+                                onChange={handleChange}
+                                label="Description"
+                                value={details.description}
+                            />
+                        </div>
+                    </div>
+                    <div className='addRunPublish'>
+                        <div>
+                            <Checkbox
+                                icon={<FavoriteBorder />}
+                                checkedIcon={<Favorite />}
+                                type="checkbox"
+                                name="publish"
+                                label='Publish'
+                                onChange={handleCheckbox}
+                                id="publish"
+                                value={details.publish}
+                            />
+                            <label id='labelPublish' for='publish'>Publish</label>
+                        </div>
+                        <div>
+                            <TextField
+                                id='idInput'
+                                variant="filled"
+                                type="text"
+                                name="userId"
+                                onChange={handleChange}
+                                value={userId.userId}
+                            />
+                            <Button
+                                variant="contained"
+                                onClick={handleSubmit}
+                                className="add-button"
+                            >Add Run</Button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     )
