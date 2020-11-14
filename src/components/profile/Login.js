@@ -101,7 +101,7 @@ export default function Login() {
                     </div>
                     <div id="login-btn">
                         <div className='registerOnLogin'>
-                            <h4>Dont have an account?</h4>
+                            <h4 className='buttonLabel'>Dont have an account?</h4>
                             <Button
                                 onClick={() => push('/register')}
                                 variant="contained"
@@ -110,7 +110,7 @@ export default function Login() {
                             >Register</Button>
                         </div>
                         <div className='registerOnLogin'>
-                            <h4>Press to Login</h4>
+                            <h4 className='buttonLabel'>Press to Login</h4>
                             <Button
                                 onClick={onSubmit}
                                 variant="contained"

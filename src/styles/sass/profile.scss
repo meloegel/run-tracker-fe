@@ -20,7 +20,13 @@
 //Register //
 #regLoginBtn {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
+}
+
+.buttonLabel {
+  color: gray;
+  font-size: 0.8rem;
 }
 
 // login //
@@ -33,7 +39,7 @@
 }
 .register-form {
   background-color: white;
-  width: 50%;
+  width: 40%;
   margin: 2rem auto;
   border: 1px solid black;
 }

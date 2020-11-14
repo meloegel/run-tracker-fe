@@ -137,6 +137,7 @@ export default function Registration() {
                                             variant="contained"
                                             className="submit"
                                         >Submit</Button>
+                                        <h4 className='buttonLabel'>Press to register</h4>
                                     </div>
                                     <div>
                                         <Button
@@ -145,6 +146,7 @@ export default function Registration() {
                                             style={{ height: '4.5vh', width: '6rem', margin: '0 auto' }}
                                             className="login"
                                         >Login</Button>
+                                        <h4 className='buttonLabel'>Already have account?</h4>
                                     </div>
                                 </div>
                             </div>
