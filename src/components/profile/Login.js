@@ -95,6 +95,10 @@ export default function Login() {
                         name="password"
                         type="text"
                     />
+                    <div className="errors">
+                        <div>{formErrors.username}</div>
+                        <div>{formErrors.password}</div>
+                    </div>
                     <div id="login-btn">
                         <div className='registerOnLogin'>
                             <h4>Dont have an account?</h4>
@@ -113,10 +117,6 @@ export default function Login() {
                                 className="submit"
                             >Login</Button>
                         </div>
-                    </div>
-                    <div className="errors">
-                        <div>{formErrors.username}</div>
-                        <div>{formErrors.password}</div>
                     </div>
                 </div>
             </form>

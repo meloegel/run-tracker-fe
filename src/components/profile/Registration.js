@@ -77,62 +77,65 @@ export default function Registration() {
     return (
         <div className="signup">
             <div>
-                <div>
-                    <h2>Sign Up</h2>
-                </div>
                 <div className="form inputs">
-                    <h4>General Information</h4>
                     <form className="form container" onSubmit={onSubmit} disabled={disabled}>
-                        <TextField
-                            value={formValues.username}
-                            onChange={onInputChange}
-                            style={{ padding: '.5rem' }}
-                            variant="filled"
-                            label='Username'
-                            name="username"
-                            type="text"
-                        />
-                        <TextField
-                            value={formValues.password}
-                            style={{ padding: '.5rem' }}
-                            onChange={onInputChange}
-                            variant="filled"
-                            label='Password'
-                            name="password"
-                            type="text"
-                        />
-                        <TextField
-                            value={formValues.email}
-                            onChange={onInputChange}
-                            style={{ padding: '.5rem' }}
-                            variant="filled"
-                            label='Email'
-                            name="email"
-                            type="email"
-                        />
-                        <TextField
-                            value={formValues.avatar}
-                            style={{ padding: '.5rem', width: '25.3ch' }}
-                            onChange={onInputChange}
-                            multiline
-                            placeholder='http link'
-                            rowsMax={6}
-                            variant="filled"
-                            label='avatar'
-                            name="avatar"
-                            type="text"
-                        />
-                        <div>
-                            <div className="errors">
-                                <div>{formErrors.username}</div>
-                                <div>{formErrors.password}</div>
-                                <div>{formErrors.email}</div>
+                        <div className='register-form'>
+                            <h2>Register</h2>
+                            <div>
+                                <TextField
+                                    value={formValues.username}
+                                    onChange={onInputChange}
+                                    style={{ padding: '.5rem', width: '30ch' }}
+                                    variant="filled"
+                                    label='Username'
+                                    name="username"
+                                    type="text"
+                                />
+                                <TextField
+                                    value={formValues.password}
+                                    style={{ padding: '.5rem', width: '30ch' }}
+                                    onChange={onInputChange}
+                                    variant="filled"
+                                    label='Password'
+                                    name="password"
+                                    type="text"
+                                />
                             </div>
-                            <Button
-                                onClick={onSubmit}
-                                variant="contained"
-                                className="submit"
-                            >Submit</Button>
+                            <div>
+                                <TextField
+                                    value={formValues.email}
+                                    onChange={onInputChange}
+                                    style={{ padding: '.5rem', width: '30ch' }}
+                                    variant="filled"
+                                    label='Email'
+                                    name="email"
+                                    type="email"
+                                />
+                                <TextField
+                                    value={formValues.avatar}
+                                    style={{ padding: '.5rem', width: '30ch' }}
+                                    onChange={onInputChange}
+                                    multiline
+                                    placeholder='http link'
+                                    rowsMax={6}
+                                    variant="filled"
+                                    label='Avatar'
+                                    name="avatar"
+                                    type="text"
+                                />
+                            </div>
+                            <div id='submit'>
+                                <div className="errors">
+                                    <div>{formErrors.username}</div>
+                                    <div>{formErrors.password}</div>
+                                    <div>{formErrors.email}</div>
+                                </div>
+                                <Button
+                                    onClick={onSubmit}
+                                    variant="contained"
+                                    className="submit"
+                                >Submit</Button>
+                            </div>
                         </div>
                     </form>
                 </div>

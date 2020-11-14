@@ -21,6 +21,12 @@
   margin: 2rem auto;
   border: 1px solid black;
 }
+.register-form {
+  background-color: white;
+  width: 50%;
+  margin: 2rem auto;
+  border: 1px solid black;
+}
 #login-btn {
   display: flex;
   justify-content: space-evenly;
@@ -39,6 +45,13 @@
   align-items: top;
 }
 
-.submit {
-  align-self: top;
+#submit {
+  padding: 1rem;
+}
+
+.errors {
+  margin: 0 auto;
+  padding: 1rem;
+  color: red;
+  text-shadow: 0.3px 0.5px black;
 }
