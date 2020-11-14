@@ -1,4 +1,4 @@
-// Edit Profile (User Profile) //@at-root
+// Edit Profile (User Profile) //
 
 .profilePreview {
   background-color: white;
@@ -11,4 +11,34 @@
   padding: 2rem 1rem;
 }
 
-//Register
+//Register //
+
+// login //
+.login-form {
+  padding: 1rem;
+  background-color: white;
+  width: 35%;
+  margin: 2rem auto;
+  border: 1px solid black;
+}
+#login-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.registerOnLogin {
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+}
+.loginBtn {
+  align-items: top;
+}
+
+.submit {
+  align-self: top;
+}

@@ -75,11 +75,8 @@ export default function Login() {
 
         <div className="login container">
             <form className="form container" onSubmit={onSubmit} disabled={disabled}>
-                <div id="login-title">
-                    <h2>Log In</h2>
-                </div>
-                <div className="login form">
-                    <h4>Login Information</h4>
+                <div className="login-form">
+                    <h2>Login</h2>
                     <TextField
                         value={formValues.username}
                         style={{ padding: '.5rem' }}
@@ -99,11 +96,23 @@ export default function Login() {
                         type="text"
                     />
                     <div id="login-btn">
-                        <Button
-                            onClick={onSubmit}
-                            variant="contained"
-                            className="submit"
-                        >Login</Button>
+                        <div className='registerOnLogin'>
+                            <h4>Dont have an account?</h4>
+                            <Button
+                                onClick={() => push('/register')}
+                                variant="contained"
+                                style={{ height: '4.5vh', width: '6rem', margin: '0 auto' }}
+                                className="register"
+                            >Register</Button>
+                        </div>
+                        <div className='registerOnLogin'>
+                            <h4>Press to Login</h4>
+                            <Button
+                                onClick={onSubmit}
+                                variant="contained"
+                                className="submit"
+                            >Login</Button>
+                        </div>
                     </div>
                     <div className="errors">
                         <div>{formErrors.username}</div>

@@ -72,7 +72,7 @@ const EditRun = () => {
                         <TextField
                             type="text"
                             variant="filled"
-                            style={{ margin: '0 0 2rem 0' }}
+                            style={{ margin: '0 0 2rem 0', padding: '.5rem' }}
                             name="runTime"
                             onChange={handleChange}
                             label="Run Time"
@@ -81,6 +81,7 @@ const EditRun = () => {
                         <TextField
                             type="text"
                             variant="filled"
+                            style={{ padding: '.5rem' }}
                             name="distance"
                             onChange={handleChange}
                             label="Distance"
@@ -90,7 +91,7 @@ const EditRun = () => {
                     <div>
                         <TextField
                             type="text"
-                            style={{ margin: '0 0 2rem 0' }}
+                            style={{ margin: '0 0 2rem 0', padding: '.5rem' }}
                             name="pace"
                             variant="filled"
                             onChange={handleChange}
@@ -102,7 +103,7 @@ const EditRun = () => {
                             variant="filled"
                             name="description"
                             onChange={handleChange}
-                            style={{ width: '25.3ch' }}
+                            style={{ width: '25.3ch', padding: '.5rem' }}
                             multiline
                             rowsMax={6}
                             label="Description"
