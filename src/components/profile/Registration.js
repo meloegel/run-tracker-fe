@@ -130,11 +130,23 @@ export default function Registration() {
                                     <div>{formErrors.password}</div>
                                     <div>{formErrors.email}</div>
                                 </div>
-                                <Button
-                                    onClick={onSubmit}
-                                    variant="contained"
-                                    className="submit"
-                                >Submit</Button>
+                                <div id='regLoginBtn'>
+                                    <div>
+                                        <Button
+                                            onClick={onSubmit}
+                                            variant="contained"
+                                            className="submit"
+                                        >Submit</Button>
+                                    </div>
+                                    <div>
+                                        <Button
+                                            onClick={() => push('/login')}
+                                            variant="contained"
+                                            style={{ height: '4.5vh', width: '6rem', margin: '0 auto' }}
+                                            className="login"
+                                        >Login</Button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
