@@ -65,14 +65,14 @@ const EditRun = () => {
 
     return (
         <div >
-            <h2>Edit Run</h2>
             <form onSubmit={handleSubmit} className='editRunForm'>
+                <h2>Edit Run</h2>
                 <div className='topForm'>
                     <div>
                         <TextField
                             type="text"
                             variant="filled"
-                            style={{ margin: '0 0 2rem 0', padding: '.5rem' }}
+                            style={{ margin: '0 0 2rem 0', padding: '.5rem', width: '30ch' }}
                             name="runTime"
                             onChange={handleChange}
                             label="Run Time"
@@ -81,7 +81,7 @@ const EditRun = () => {
                         <TextField
                             type="text"
                             variant="filled"
-                            style={{ padding: '.5rem' }}
+                            style={{ padding: '.5rem', width: '30ch' }}
                             name="distance"
                             onChange={handleChange}
                             label="Distance"
@@ -91,7 +91,7 @@ const EditRun = () => {
                     <div>
                         <TextField
                             type="text"
-                            style={{ margin: '0 0 2rem 0', padding: '.5rem' }}
+                            style={{ margin: '0 0 2rem 0', padding: '.5rem', width: '30ch' }}
                             name="pace"
                             variant="filled"
                             onChange={handleChange}
@@ -103,7 +103,7 @@ const EditRun = () => {
                             variant="filled"
                             name="description"
                             onChange={handleChange}
-                            style={{ width: '25.3ch', padding: '.5rem' }}
+                            style={{ width: '30ch', padding: '.5rem' }}
                             multiline
                             rowsMax={6}
                             label="Description"
@@ -120,7 +120,7 @@ const EditRun = () => {
                     onChange={handleCheckbox}
                     checked={details.publish}
                     id="publish"
-                    style={{ margin: '2rem 0 2rem 0' }}
+                    style={{ margin: '1rem 0 2rem 0' }}
                     value={details.publish}
                 />
                 <label for='publish'>Publish</label>
@@ -133,15 +133,13 @@ const EditRun = () => {
                     value={details.userId}
                     placeholder={userId.userId}
                 />
-                <div />
-                <br />
                 <Button
                     variant="contained"
                     className="add-button"
                     onClick={handleSubmit}
                 >Edit Run</Button>
             </form>
-        </div>
+        </div >
     )
 }
 

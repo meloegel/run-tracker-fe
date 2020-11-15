@@ -1,12 +1,18 @@
 // Edit Run //
 
 .editRunForm {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
 .topForm {
   display: flex;
+}
+
+.editRunForm {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid black;
 }
 
 // User Profile //
