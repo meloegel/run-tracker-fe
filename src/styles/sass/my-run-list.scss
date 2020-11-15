@@ -65,3 +65,28 @@
 #totalDistance {
   font-size: 3rem;
 }
+
+// Media Queries //
+
+@media screen and (max-width: 376px) {
+  // My Run List //
+  .totalDistanceRan {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .test {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // My Card //
+  .runCard {
+    width: 90%;
+  }
+
+  //Edit Run //
+  .topForm {
+    flex-direction: column;
+  }
+}

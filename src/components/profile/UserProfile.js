@@ -63,7 +63,8 @@ const UserProfile = () => {
                         <div>
                             <TextField
                                 type="text"
-                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                id='test'
+                                style={{ margin: '0 0 1rem 0', width: '30ch' }}
                                 variant="filled"
                                 name="username"
                                 onChange={handleChange}
@@ -72,7 +73,7 @@ const UserProfile = () => {
                             />
                             <TextField
                                 type="text"
-                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                style={{ margin: '0 0 1rem 0', width: '30ch' }}
                                 variant="filled"
                                 name="email"
                                 onChange={handleChange}
@@ -83,7 +84,7 @@ const UserProfile = () => {
                         <div>
                             <TextField
                                 type="text"
-                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                style={{ margin: '0 0 1rem 0', width: '30ch' }}
                                 variant="filled"
                                 name="location"
                                 onChange={handleChange}
@@ -92,7 +93,7 @@ const UserProfile = () => {
                             />
                             <TextField
                                 type="text"
-                                style={{ margin: '0 0 2rem 0', width: '30ch' }}
+                                style={{ margin: '0 0 1rem 0', width: '30ch' }}
                                 variant="filled"
                                 name="avatar"
                                 multiline
@@ -114,7 +115,7 @@ const UserProfile = () => {
             <br></br>
             <h2>Profile Preview</h2>
             <div className='profilePreview'>
-                <div>
+                <div className='profilePreviewDiv'>
                     <h2 className='username'>Username: {details.username}</h2>
                     <h2 className='email'>Email: {details.email}</h2>
                     <h2 className='location'>Location: {details.location}</h2>
