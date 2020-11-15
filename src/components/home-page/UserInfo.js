@@ -23,10 +23,10 @@ const UserInfo = ({ userId }) => {
 
     return (
         <div>
-            <Typography className='username'>Username: {userInfo.username}</Typography>
-            <Typography className='location'>Location: {userInfo.location}</Typography>
+            <Typography id='cardContentTitle'><span className='cardContentTitle'>Username: </span> {userInfo.username}</Typography>
+            <Typography id='cardContentTitle'><span className='cardContentTitle'>Location: </span>{userInfo.location}</Typography>
             <img src={userInfo.avatar} alt='Users Avatar' className='avatarImg' />
-        </div>
+        </div >
     )
 }
 

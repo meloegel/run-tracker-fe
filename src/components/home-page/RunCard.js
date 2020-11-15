@@ -18,11 +18,11 @@ const RunCard = ({ run }) => {
                     <UserInfo userId={run.userId} />
                 </div>
                 <div>
-                    <Typography id='runTime'><span className='cardContentTitle'>Run Time:</span> {run.runTime}</Typography>
-                    <Typography ><span className='cardContentTitle'>Distance:</span> {run.distance}</Typography>
-                    <Typography ><span className='cardContentTitle'>Pace:</span> {run.pace}</Typography>
-                    <Typography ><span className='cardContentTitle'>Description:</span> {run.description}</Typography>
-                    <Typography ><span className='cardContentTitle'>Posted:</span> {FormatDateTime(run.timePosted)}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Run Time:</span> {run.runTime}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Distance:</span> {run.distance}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Pace:</span> {run.pace}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Description:</span> {run.description}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Posted:</span> {FormatDateTime(run.timePosted)}</Typography>
                 </div>
             </CardContent>
         </Card>

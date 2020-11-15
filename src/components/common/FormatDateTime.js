@@ -1,4 +1,4 @@
-
+// Formats military time to standard //
 const formatHour = (hour, min) => {
     if (hour >= 13) {
         var newHour = hour - 12
@@ -16,7 +16,6 @@ const FormatDateTime = (dateTime) => {
     var year = dates[0]
     var month = dates[1]
     var day = dates[2]
-
 
     // Formats Time //
     var time = date_time[1]
