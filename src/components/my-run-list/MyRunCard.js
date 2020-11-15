@@ -49,12 +49,12 @@ const MyRunCard = ({ run }) => {
                     <PersonalInfo />
                 </div>
                 <div>
-                    <Typography className='runTime'>Run Time: {run.runTime}</Typography>
-                    <Typography className='distance'>Distance: {run.distance}</Typography>
-                    <Typography className='pace'>Pace: {run.pace}</Typography>
-                    <Typography className='description'>Description: {run.description}</Typography>
-                    <Typography className='publish'>Published: {formatPublish(run.publish)}</Typography>
-                    <Typography className='posted'>Posted: {!run.timePosted ? run.TimePosted : FormatDateTime(run.timePosted)}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Run Time:</span> {run.runTime}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Distance:</span> {run.distance}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Pace:</span> {run.pace}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Description:</span> {run.description}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Published:</span> {formatPublish(run.publish)}</Typography>
+                    <Typography id='cardContentTitle'><span className='cardContentTitle'>Posted:</span> {!run.timePosted ? run.TimePosted : FormatDateTime(run.timePosted)}</Typography>
                     <Button
                         style={{ margin: "0 1rem 0 0" }}
                         variant="contained"

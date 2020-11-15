@@ -35,9 +35,9 @@ const ProfileCard = () => {
             <Card >
                 <CardContent className='profileCardContent'>
                     <div >
-                        <Typography className='username'>Username: {details.username}</Typography>
-                        <Typography className='email'>Email: {details.email}</Typography>
-                        <Typography className='location'>Location: {details.location}</Typography>
+                        <Typography id='profileCardContent'><span className='profileCardTitle'>Username:</span> {details.username}</Typography>
+                        <Typography id='profileCardContent'><span className='profileCardTitle'>Email:</span> {details.email}</Typography>
+                        <Typography id='profileCardContent'><span className='profileCardTitle'>Location:</span> {details.location}</Typography>
                     </div>
                     <img src={details.avatar} alt='Users Avatar' className='avatarImg' />
                 </CardContent>
