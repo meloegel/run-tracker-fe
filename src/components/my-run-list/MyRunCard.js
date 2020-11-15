@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import CardContent from '@material-ui/core/CardContent';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
+import FormatDateTime from '../common/FormatDateTime';
 
 const MyRunCard = ({ run }) => {
     const { push } = useHistory();
@@ -53,7 +54,7 @@ const MyRunCard = ({ run }) => {
                     <Typography className='pace'>Pace: {run.pace}</Typography>
                     <Typography className='description'>Description: {run.description}</Typography>
                     <Typography className='publish'>Published: {formatPublish(run.publish)}</Typography>
-                    <Typography className='posted'>Posted: {run.timePosted}</Typography>
+                    <Typography className='posted'>Posted: {!run.timePosted ? run.TimePosted : FormatDateTime(run.timePosted)}</Typography>
                     <Button
                         style={{ margin: "0 1rem 0 0" }}
                         variant="contained"
