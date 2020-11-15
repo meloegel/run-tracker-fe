@@ -18,9 +18,8 @@ const RunCard = ({ run }) => {
                     <Typography className='runTime'>Run Time: {run.runTime}</Typography>
                     <Typography className='distance'>Distance: {run.distance}</Typography>
                     <Typography className='pace'>Pace: {run.pace}</Typography>
-                    <Typography className='posted'>Posted: {run.timePosted}</Typography>
                     <Typography className='description'>Description: {run.description}</Typography>
-                    <Typography className='user'>User: {run.userId}</Typography>
+                    <Typography className='posted'>Posted: {run.timePosted}</Typography>
                 </div>
             </CardContent>
         </Card>
