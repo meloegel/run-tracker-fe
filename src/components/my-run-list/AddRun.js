@@ -79,6 +79,7 @@ const AddRun = () => {
                                 variant="filled"
                                 style={{ padding: '.5rem', width: '30ch' }}
                                 name="distance"
+                                placeholder='miles'
                                 onChange={handleChange}
                                 label="Distance"
                                 value={details.distance}

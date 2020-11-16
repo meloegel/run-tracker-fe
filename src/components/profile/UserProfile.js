@@ -114,9 +114,9 @@ const UserProfile = () => {
             <h2>Profile Preview</h2>
             <div className='profilePreview'>
                 <div className='profilePreviewDiv'>
-                    <h2 className='username'>Username: {details.username}</h2>
-                    <h2 className='email'>Email: {details.email}</h2>
-                    <h2 className='location'>Location: {details.location}</h2>
+                    <h2 id='cardContentTitle'><span className='cardContentTitle'>Username: </span> {details.username}</h2>
+                    <h2 id='cardContentTitle'><span className='cardContentTitle'>Email: </span> {details.email}</h2>
+                    <h2 id='cardContentTitle'><span className='cardContentTitle'>Location: </span> {details.location}</h2>
                 </div>
                 <img src={details.avatar} alt='Users Avatar' className='avatarImg' />
             </div>
