@@ -28,9 +28,9 @@ const PersonalInfo = () => {
 
     return (
         <div>
+            <img src={userInfo.avatar} alt='Users Avatar' className='avatarImg' />
             <Typography id='cardContentTitle'><span className='cardContentTitle'>Username:</span> {userInfo.username}</Typography>
             <Typography id='cardContentTitle'><span className='cardContentTitle'>Location:</span> {userInfo.location}</Typography>
-            <img src={userInfo.avatar} alt='Users Avatar' className='avatarImg' />
         </div>
     )
 }

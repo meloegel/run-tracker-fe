@@ -24,7 +24,7 @@ const FormatDateTime = (dateTime) => {
     var min = timeUnformat[1]
     // var sec = timeUnformat[2]
 
-    return (`${formatHour(hour, min)} ${month}-${day}-${year}`)
+    return (`${month}-${day}-${year} | ${formatHour(hour, min)} `)
 }
 
 export default FormatDateTime;

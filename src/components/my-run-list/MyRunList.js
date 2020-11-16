@@ -34,7 +34,7 @@ const MyRunList = () => {
 
     return (
         <div>
-            <div className='test'>
+            <div >
                 <div className='totalDistanceRan'>
                     <h3 id='totalDistanceRan'><div id='totalDistance'>{totalDistance}</div>Total Distance Ran</h3>
                 </div>
