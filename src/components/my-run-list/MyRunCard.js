@@ -28,7 +28,7 @@ const MyRunCard = ({ run }) => {
         }
     }
     const formatPublish = (publish) => {
-        if (publish === 1) {
+        if (publish === true) {
             return 'Yes'
         } else {
             return 'No'
