@@ -10,7 +10,7 @@ const formatHour = (hour, min) => {
 
 const FormatDateTime = (dateTime) => {
     // Formats Date //
-    var date_time = dateTime.split(" ")
+    var date_time = dateTime.split("T")
     var dateUnformat = date_time[0]
     var dates = dateUnformat.split('-')
     var year = dates[0]
@@ -19,7 +19,9 @@ const FormatDateTime = (dateTime) => {
 
     // Formats Time //
     var time = date_time[1]
-    var timeUnformat = time.split(':')
+    var noZ = time.split('Z')
+    var zLess = noZ[0]
+    var timeUnformat = zLess.split(':')
     var hour = timeUnformat[0]
     var min = timeUnformat[1]
     // var sec = timeUnformat[2]
