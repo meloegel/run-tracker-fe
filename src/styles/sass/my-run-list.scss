@@ -91,7 +91,6 @@
     width: 100%;
     margin: 0 auto;
   }
-
   // My Card //
   .runCard {
     width: 90%;
@@ -118,5 +117,33 @@
   }
   .addRunFormInputs {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // My Run List //
+  .totalDistanceRan {
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .test {
+    width: 100%;
+    margin: 0 auto;
+  }
+  // My Card //
+  .runCard {
+    width: 90%;
+  }
+  .cardContentDiv {
+    padding: 0.5rem;
+  }
+  //Edit Run //
+  .editRunForm {
+    width: 95%;
+  }
+  // Add Run //
+  .addRunForm {
+    width: 95%;
   }
 }

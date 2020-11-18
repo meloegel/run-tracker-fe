@@ -100,3 +100,29 @@
     width: 95%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  //User Profile//
+  .userProfile {
+    width: 90%;
+  }
+  .profilePreview {
+    width: 90%;
+    font-size: 0.6rem;
+    flex-direction: column-reverse;
+  }
+  .editUserInfoForm {
+    width: 90%;
+  }
+  .profilePreviewDiv {
+    width: 100%;
+  }
+  //Login //
+  .login-form {
+    width: 95%;
+  }
+  // Register //
+  .register-form {
+    width: 95%;
+  }
+}
