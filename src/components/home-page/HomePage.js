@@ -13,8 +13,6 @@ const HomePage = () => {
         userId: window.localStorage.getItem('userId')
     });
 
-
-
     const getAllPublishedRuns = () => {
         axiosWithAuth()
             .get('api/run-tracker/runs')
@@ -25,9 +23,6 @@ const HomePage = () => {
     useEffect(() => {
         getAllPublishedRuns();
     }, [])
-
-
-
 
     return (
         <div>

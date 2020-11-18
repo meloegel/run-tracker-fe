@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
 import Typography from '@material-ui/core/Typography';
 
@@ -7,7 +7,6 @@ const initialDetails = {
     location: '',
     avatar: ''
 }
-
 
 const UserInfo = ({ userId }) => {
     const [userInfo, setUserInfo] = useState(initialDetails)
