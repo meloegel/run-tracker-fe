@@ -68,7 +68,7 @@ const EditRun = () => {
             <form onSubmit={handleSubmit} className='editRunForm'>
                 <h2>Edit Run</h2>
                 <div className='topForm'>
-                    <div>
+                    <div className='topFormTopDiv'>
                         <TextField
                             type="text"
                             variant="filled"

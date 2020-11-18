@@ -40,3 +40,10 @@
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
+
+@media screen and (max-width: 376px) {
+  //Home Page //
+  .cardContent {
+    flex-direction: column-reverse;
+  }
+}

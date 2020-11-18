@@ -48,7 +48,7 @@ const MyRunCard = ({ run }) => {
                 <div className='personalInfoDiv'>
                     <PersonalInfo />
                 </div>
-                <div>
+                <div className='cardContentDiv'>
                     <Typography id='cardContentTitle'><span className='cardContentTitle'>Run Time:</span> {run.runTime}</Typography>
                     <Typography id='cardContentTitle'><span className='cardContentTitle'>Distance:</span> {run.distance}</Typography>
                     <Typography id='cardContentTitle'><span className='cardContentTitle'>Pace:</span> {run.pace}</Typography>

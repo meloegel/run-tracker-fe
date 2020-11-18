@@ -96,9 +96,27 @@
   .runCard {
     width: 90%;
   }
-
+  .myCardContent {
+    flex-direction: column-reverse;
+  }
+  .cardContentDiv {
+    padding: 0.5rem;
+  }
   //Edit Run //
   .topForm {
+    flex-direction: column;
+  }
+  .editRunForm {
+    width: 95%;
+  }
+  .topFormTopDiv {
+    padding-bottom: 2rem;
+  }
+  // Add Run //
+  .addRunForm {
+    width: 95%;
+  }
+  .addRunFormInputs {
     flex-direction: column;
   }
 }

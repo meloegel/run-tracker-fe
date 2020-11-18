@@ -88,3 +88,9 @@ nav :hover {
   max-width: 200px;
   max-height: 200px;
 }
+
+@media screen and (max-width: 376px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}

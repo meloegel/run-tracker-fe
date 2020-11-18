@@ -28,4 +28,10 @@
     display: flex;
     flex-direction: column;
   }
+  .profileCardContent {
+    flex-direction: column-reverse;
+  }
+  .profileCard {
+    justify-content: center;
+  }
 }
