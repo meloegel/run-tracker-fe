@@ -147,3 +147,18 @@
     width: 95%;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  // Add Run //
+  .addRunForm {
+    width: 30%;
+  }
+  // Edit Run //
+  .editRunForm {
+    width: 30%;
+  }
+  // Run Card //
+  .runCard {
+    width: 28%;
+  }
+}

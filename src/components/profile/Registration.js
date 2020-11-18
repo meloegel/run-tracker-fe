@@ -135,6 +135,7 @@ export default function Registration() {
                                         <Button
                                             onClick={onSubmit}
                                             variant="contained"
+                                            style={{ height: '4.5vh', width: '6rem', margin: '0 auto' }}
                                             className="submit"
                                         >Submit</Button>
                                         <h4 className='buttonLabel'>Press to register</h4>

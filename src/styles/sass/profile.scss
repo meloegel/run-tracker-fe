@@ -126,3 +126,12 @@
     width: 95%;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .userProfile {
+    width: 45%;
+  }
+  .profilePreview {
+    width: 20%;
+  }
+}

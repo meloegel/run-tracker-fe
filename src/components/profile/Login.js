@@ -113,6 +113,7 @@ export default function Login() {
                             <h4 className='buttonLabel'>Press to Login</h4>
                             <Button
                                 onClick={onSubmit}
+                                style={{ height: '4.5vh', width: '6rem', margin: '0 auto' }}
                                 variant="contained"
                                 className="submit"
                             >Login</Button>
