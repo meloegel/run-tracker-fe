@@ -14,7 +14,7 @@ const RunCard = ({ run }) => {
     return (
         <Card className='runCard'>
             <CardContent className='cardContent'>
-                <div>
+                <div className='userInfoDiv'>
                     <UserInfo userId={run.userId} />
                 </div>
                 <div>

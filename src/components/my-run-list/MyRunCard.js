@@ -45,7 +45,7 @@ const MyRunCard = ({ run }) => {
     return (
         <Card className='runCard'>
             <CardContent className='myCardContent' >
-                <div>
+                <div className='personalInfoDiv'>
                     <PersonalInfo />
                 </div>
                 <div>

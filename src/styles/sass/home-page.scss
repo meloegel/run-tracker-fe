@@ -20,10 +20,12 @@
 
 .runCard {
   border: 1px solid black;
-  width: 35%;
+  width: 40%;
   margin: 1rem auto;
 }
-
+.userInfoDiv {
+  width: 55%;
+}
 .cardContent {
   display: flex;
   margin: 0 auto;
