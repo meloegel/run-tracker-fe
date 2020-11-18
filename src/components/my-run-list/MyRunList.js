@@ -31,12 +31,18 @@ const MyRunList = () => {
     runList.forEach(run => {
         totalDistance = run.distance + totalDistance
     })
+    var totalRuns = 0
+    runList.forEach(run => {
+        totalRuns += 1
+    })
+
 
     return (
         <div>
             <div >
                 <div className='totalDistanceRan'>
                     <h3 id='totalDistanceRan'><div id='totalDistance'>{totalDistance}</div>Total Distance Ran</h3>
+                    <h3 id='totalDistanceRan'><div id='totalDistance'>{totalRuns}</div>Total Runs</h3>
                 </div>
             </div>
             <h1>My Run List</h1>
