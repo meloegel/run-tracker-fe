@@ -15,6 +15,7 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 ## Technologies Used
 
 -React<br>
+-React Router<br>
 -Axios<br>
 -Reactjs-popup<br>
 -Reactstrap<br>
@@ -96,4 +97,27 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 ## Code Snippets
 
+<img src="./src/styles/img/AxiosExample.PNG" width = "500" />
+
+#### Description: Example of Axios with authentication
+
+<img src="./src/styles/img/YupExample.PNG" width = "500" />
+
+#### Description: Yup example
+
+<img src="./src/styles/img/ProfileCard.PNG" width = "1000" />
+
+#### Description: Profile card example
+
+<img src="./src/styles/img/FormatDateTime.PNG" width = "500" />
+
+#### Description: Format date and time
+
+<br>
+<br>
+
 ## Mobile Site
+
+<img src="./src/styles/img/.PNG" width = "500" />
+
+#### Description:
