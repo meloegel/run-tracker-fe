@@ -53,6 +53,15 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 <br>
 <br>
 
+## My Run List
+
+<img src="./src/styles/img/MyRunList.PNG" width = "600" />
+
+#### Description: On your run list page you can view all of your runs, in the top left a total of your milage and total runs is displayed. On your run list you can add runs, edit and delete runs.
+
+<br>
+<br>
+
 ## Add Run/Edit Run
 
 ## Misc
