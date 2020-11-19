@@ -64,7 +64,35 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 ## Add Run/Edit Run
 
+<img src="./src/styles/img/EditRun.PNG" width = "500" />
+
+#### Description: Basic edit and add run page. Note edit page autofills with previous information and publish button will toggle publshing run.
+
+<img src="./src/styles/img/AddRun.PNG" width = "500" />
+
+<br>
+<br>
+
 ## Misc
+
+<img src="./src/styles/img/ProfilePreview.PNG" width = "500" />
+
+#### Description: While logged into an account the home page will display a preview of your account rather than login/register buttons.
+
+<img src="./src/styles/img/Alert.PNG" width = "500" />
+
+#### Description: While not logged into an account, you will be notified if trying to access an area you need to be logged into to view. (My Run List/Account Settings)
+
+<img src="./src/styles/img/EditAccountTop.PNG" width = "500" />
+
+#### Description: Editing a user account will autofill previous information and in the top right your current account will be previewed.
+
+<img src="./src/styles/img/EditAccountBottom.PNG" width = "500" />
+
+#### Desctription: A live preview of your account updates displays at bottom of screen.
+
+<br>
+<br>
 
 ## Code Snippets
 
