@@ -4,7 +4,7 @@
 
 ## Documentation:
 
-Deployed Link: <br>
+Deployed Link: https://run-tracker.vercel.app/<br>
 Back-End Deployed Link: https://run-tracker-be.herokuapp.com/<br>
 Back-End Github: https://github.com/meloegel/run-tracker-be<br>
 
@@ -27,6 +27,20 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 <img src="./src/styles/img/FE-fileStructure.PNG" width = "200" />
 
 ## Home Page
+
+<img src="./src/styles/img/HomePage.PNG" width = "600" />
+
+#### Description: On the home page you can view published runs in the main feed.
+
+<br>
+<br>
+
+<img src="./src/styles/img/PublishedRuns.PNG" width = "600" />
+
+#### Description: All published runs will appear below
+
+<br>
+<br>
 
 ## Login/Register
 
