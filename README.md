@@ -14,17 +14,17 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 ## Technologies Used
 
--React
--Axios
--Reactjs-popup
--Reactstrap
--Sass
--Material Ui
--Yup
+-React<br>
+-Axios<br>
+-Reactjs-popup<br>
+-Reactstrap<br>
+-Sass<br>
+-Material Ui<br>
+-Yup<br>
 
 ## File Structure
 
-<img src="./imgs/.PNG" width = "200" />
+<img src="./src/styles/img/FE-fileStructure.PNG" width = "200" />
 
 ## Home Page
 
