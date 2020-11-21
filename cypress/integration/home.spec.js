@@ -5,5 +5,7 @@ describe('Home page tests', () => {
         cy.visit('http://localhost:3000/')
         cy.url().should('include', "localhost")
     })
+    it('published runs should be displayed', () => {
 
+    })
 })
