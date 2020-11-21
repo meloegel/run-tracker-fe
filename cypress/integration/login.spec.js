@@ -36,3 +36,14 @@ describe('Login errors', () => {
         cy.contains('Please enter your password').should('exist')
     })
 })
+
+describe('Register button on Login page directs to registration', () => {
+    it('can navigate to Login', () => {
+        cy.visit('http://localhost:3000/login')
+        cy.url().should('include', "localhost")
+    })
+    it('Register button routes correctly', () => {
+        cy.get('button.register').click()
+        cy.url().should('include', 'http://localhost:3000/register')
+    })
+})
