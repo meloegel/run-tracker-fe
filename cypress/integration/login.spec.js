@@ -1,4 +1,4 @@
-
+// Login Page Tests //
 describe('Login tests', () => {
     it('can navigate to Login', () => {
         cy.visit('http://localhost:3000/login')
