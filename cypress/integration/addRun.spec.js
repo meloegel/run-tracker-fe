@@ -15,11 +15,10 @@ describe('Add run tests', () => {
             .type('school')
             .should('have.value', 'school')
     })
-    it('Can login', () => {
-        cy.get('button.submit').click()
-
-    })
-    it('Can navigate to add run', () => {
+    it('Can login and navigate to add run', () => {
+        cy.get('button.submit').click() // doesnt wait for login to go through
+        cy.wait(1000)
+        cy.url().should('include', 'http://localhost:3000/')
         cy.visit('http://localhost:3000/my-run-list')
         cy.get('button.addRun').click()
     })
@@ -33,4 +32,21 @@ describe('Add run tests', () => {
             .type('9:00')
             .should('have.value', '9:00')
     })
+    it('Can type in distance', () => {
+        cy.get('input[name="distance"]')
+            .type('1')
+            .should('have.value', '1')
+    })
+    it('Can type in description', () => {
+        cy.get('[style="width: 30ch; padding: 0.5rem;"] > .MuiInputBase-root')
+            .type('Good Run')
+    })
+    it('Can publish run', () => {
+        cy.get('#publish').click()
+    })
+    it('Can add run', () => {
+        cy.get('button.add-button').click()
+        cy.wait(1000)
+    })
 })
+
