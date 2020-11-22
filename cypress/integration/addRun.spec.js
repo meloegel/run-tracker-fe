@@ -15,6 +15,10 @@ describe('Add run tests', () => {
             .type('school')
             .should('have.value', 'school')
     })
+    it('Can login', () => {
+        cy.get('button.submit').click()
+
+    })
     it('Can navigate to add run', () => {
         cy.visit('http://localhost:3000/my-run-list')
         cy.get('button.addRun').click()

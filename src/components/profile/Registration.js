@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 import React, { useState, useEffect } from 'react';
 import registrationSchema from '../../validation/registrationSchema';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';

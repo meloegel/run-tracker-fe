@@ -59,7 +59,7 @@ function App() {
                 <NavLink className='nav' to='/'>Run Tracker</NavLink>
                 <NavLink
                   onClick={handleOnClick}
-                  className='nav'
+                  className='nav myRunList'
                   to='/my-run-list'>My Run List</NavLink>
                 <NavLink
                   onClick={handleOnClick}

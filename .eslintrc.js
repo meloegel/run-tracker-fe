@@ -1,4 +1,4 @@
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[iI]gnored" }]*/
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 module.exports = {
     "env": {
         "browser": true,
