@@ -34,6 +34,7 @@ const MyRunList = () => {
     var totalRuns = 0
     runList.forEach(run => {
         totalRuns += 1
+        console.log(run)
     })
 
 
@@ -51,6 +52,8 @@ const MyRunList = () => {
                     style={{ height: '4.5vh', margin: '1rem auto' }}
                     variant="contained"
                     onClick={() => push('/add-run')}
+                    name='addRun'
+                    className='addRun'
                 >Add Run</Button>
                 <PersonalRunList />
             </div>
