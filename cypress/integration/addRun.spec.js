@@ -17,7 +17,7 @@ describe('Add run tests', () => {
     })
     it('Can navigate to add run', () => {
         cy.visit('http://localhost:3000/my-run-list')
-        cy.get('button.add run').click()
+        cy.get('button.addRun').click()
     })
     it('Can type in run time', () => {
         cy.get('input[name="runTime"]')
