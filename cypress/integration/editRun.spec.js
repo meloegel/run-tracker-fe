@@ -1,7 +1,5 @@
 // Edit Run Tests //
 
-const { BlurOnTwoTone } = require("@material-ui/icons")
-
 describe('Edit run tests', () => {
     it('can navigate to Login', () => {
         cy.visit('http://localhost:3000/login')

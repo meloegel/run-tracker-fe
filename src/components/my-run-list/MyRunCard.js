@@ -59,7 +59,7 @@ const MyRunCard = ({ run }) => {
                     <Button
                         style={{ margin: "0 1rem 0 0" }}
                         variant="contained"
-                        className='editDeleteBtn'
+                        className='editDeleteBtn delete'
                         onClick={handleConfirm}
                     >Delete Run</Button>
                     <Button
