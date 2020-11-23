@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
@@ -62,7 +63,7 @@ const MyRunCard = ({ run }) => {
                         onClick={handleConfirm}
                     >Delete Run</Button>
                     <Button
-                        className='editDeleteBtn'
+                        className='editDeleteBtn edit'
                         variant="contained"
                         onClick={handleEdit}
                     >Edit Run</Button>

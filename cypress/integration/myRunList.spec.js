@@ -15,8 +15,8 @@ describe('My-Run-List tests', () => {
             .type('school')
             .should('have.value', 'school')
     })
-    it('Can login and navigate to add run', () => {
-        cy.get('button.submit').click() // doesnt wait for login to go through
+    it('Can login and navigate my run list', () => {
+        cy.get('button.submit').click()
         cy.wait(2000)
         cy.url().should('include', 'http://localhost:3000/')
         cy.get('.myRunList').click()
