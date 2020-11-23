@@ -28,5 +28,4 @@ describe('Delete run tests', () => {
         cy.get('@btn').click()
         cy.wait(1000)
     })
-
 })

@@ -21,12 +21,16 @@ describe('Edit run tests', () => {
         cy.url().should('include', 'http://localhost:3000/')
         cy.get('.myRunList').click()
         cy.wait(3000)
+        cy.get('button.edit').first().as('btn')
+        cy.get('@btn').click()
+        cy.wait(3000)
     })
     it('Edit a run', () => {
-        cy.get('button.edit').first().as('btn')
-        cy.wait(1000)
-        cy.get('@btn').click()
-
+        cy.get('input[name="runTime"]')
+            .clear()
+            .type('24:30')
+        cy.get('.add-button').click()
+        cy.wait(3000)
     })
 
 })
