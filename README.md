@@ -22,9 +22,11 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 -Sass<br>
 -Material Ui<br>
 -Yup<br>
+-Cypress<br>
 
 ## File Structure
 
+<img src="./src/styles/img/cypress.PNG" width = "200" /><br>
 <img src="./src/styles/img/FE-fileStructure.PNG" width = "200" />
 
 ## Home Page
@@ -129,3 +131,13 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 <img src="./src/styles/img/MobileMyRunList.PNG" width = "200" /><img src="./src/styles/img/MobileEdit.PNG" width = "200" />
 
 #### Description: Mobile My Run List and edit run
+
+## Testing
+
+<img src="./src/styles/img/testCode.PNG" width = "500" />
+
+#### Description: Example of testing code
+
+<img src="./src/styles/img/loginTest.PNG" width = "500" />
+
+#### Description: Example of Cypress interface
