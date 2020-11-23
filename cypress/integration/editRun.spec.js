@@ -32,5 +32,4 @@ describe('Edit run tests', () => {
         cy.get('.add-button').click()
         cy.wait(3000)
     })
-
 })

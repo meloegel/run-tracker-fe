@@ -21,7 +21,6 @@ describe('Account Settings tests', () => {
         cy.url().should('include', 'http://localhost:3000/')
         cy.get('.account').click()
         cy.wait(3000)
-
     })
     it('Edit account', () => {
         cy.get('input[name="location"]')
@@ -30,5 +29,4 @@ describe('Account Settings tests', () => {
         cy.get('.update-user-button').click()
         cy.wait(3000)
     })
-
 })

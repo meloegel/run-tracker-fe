@@ -1,4 +1,5 @@
 // Registration Page Tests //
+
 describe('Registration tests', () => {
     it('can navigate to Registration', () => {
         cy.visit('http://localhost:3000/register')

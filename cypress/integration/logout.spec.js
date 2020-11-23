@@ -23,5 +23,4 @@ describe('Logout tests', () => {
         cy.url().should('include', 'http://localhost:3000/')
         cy.get('.loginRegister')
     })
-
 })
