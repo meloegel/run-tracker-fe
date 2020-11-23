@@ -63,7 +63,7 @@ function App() {
                   to='/my-run-list'>My Run List</NavLink>
                 <NavLink
                   onClick={handleOnClick}
-                  className='nav'
+                  className='nav account'
                   to='/account'>Account Settings</NavLink>
                 <NavLink className='nav logout' to='/' onClick={handleLogout}>Logout</NavLink>
               </nav>
