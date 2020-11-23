@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 import React, { useState, useContext, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { axiosWithAuth } from '../../utils/axiosWithAuth';
@@ -123,7 +124,7 @@ const EditRun = () => {
                     style={{ margin: '1rem 0 2rem 0' }}
                     value={details.publish}
                 />
-                <label for='publish'>Publish</label>
+                <label htmlFor='publish'>Publish</label>
                 <div />
                 <input
                     id='idInput'

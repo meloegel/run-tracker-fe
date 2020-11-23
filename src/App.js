@@ -1,4 +1,4 @@
-/*eslint no-unused-vars: ["error", { "args": "none" }]*/
+
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 import './styles/sass/index.scss';
