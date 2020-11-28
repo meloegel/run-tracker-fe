@@ -49,7 +49,7 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/Login.PNG" width = "500" />
 
-#### Description: Basic Login and Register Pages
+#### Description: Basic Login and Register Pages<br>
 
 <img src="./src/styles/img/Register.PNG" width = "500" />
 
