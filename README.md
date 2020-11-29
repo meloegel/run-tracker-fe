@@ -49,7 +49,7 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/Login.PNG" width = "500" />
 
-#### Description: Basic Login and Register Pages
+#### Description: Basic Login and Register Pages<br>
 
 <img src="./src/styles/img/Register.PNG" width = "500" />
 
@@ -60,7 +60,7 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/MyRunList.PNG" width = "600" />
 
-#### Description: On your run list page you can view all of your runs, in the top left a total of your milage and total runs is displayed. On your run list you can add runs, edit and delete runs.
+#### Description: On your run list page you can view all of your runs, in the top left a total of your mileage and total runs is displayed. On your run list you can add runs, edit and delete runs.
 
 <br>
 <br>
@@ -69,7 +69,7 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/EditRun.PNG" width = "500" />
 
-#### Description: Basic edit and add run page. Note edit page autofills with previous information and publish button will toggle publshing run.
+#### Description: Basic edit and add run page. Note edit page autofills with previous information and publish button will toggle publishing run. <br>
 
 <img src="./src/styles/img/AddRun.PNG" width = "500" />
 
@@ -80,19 +80,19 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/ProfilePreview.PNG" width = "500" />
 
-#### Description: While logged into an account the home page will display a preview of your account rather than login/register buttons.
+#### Description: While logged into an account the home page will display a preview of your account rather than login/register buttons. <br>
 
 <img src="./src/styles/img/Alert.PNG" width = "500" />
 
-#### Description: While not logged into an account, you will be notified if trying to access an area you need to be logged into to view. (My Run List/Account Settings)
+#### Description: While not logged into an account, you will be notified if trying to access an area you need to be logged into to view. (My Run List/Account Settings)<br>
 
 <img src="./src/styles/img/EditAccountTop.PNG" width = "500" />
 
-#### Description: Editing a user account will autofill previous information and in the top right your current account will be previewed.
+#### Description: Editing a user account will autofill previous information and in the top right your current account will be previewed.<br>
 
 <img src="./src/styles/img/EditAccountBottom.PNG" width = "500" />
 
-#### Desctription: A live preview of your account updates displays at bottom of screen.
+#### Desctription: A live preview of your account updates displays at bottom of screen.<br>
 
 <br>
 <br>
@@ -101,19 +101,19 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/AxiosExample.PNG" width = "500" />
 
-#### Description: Example of Axios with authentication
+#### Description: Example of Axios with authentication<br>
 
 <img src="./src/styles/img/YupExample.PNG" width = "500" />
 
-#### Description: Yup example
+#### Description: Yup example<br>
 
 <img src="./src/styles/img/ProfileCard.PNG" width = "1000" />
 
-#### Description: Profile card example
+#### Description: Profile card example<br>
 
 <img src="./src/styles/img/FormatDateTime.PNG" width = "500" />
 
-#### Description: Format date and time
+#### Description: Format date and time<br>
 
 <br>
 <br>
@@ -122,22 +122,22 @@ Run Tracker was created by Mark Loegel. Mark created Run Tracker because he has 
 
 <img src="./src/styles/img/MobileRegister.PNG" width = "200" /><img src="./src/styles/img/MobileLogin.PNG" width = "200" />
 
-#### Description: Basic Mobile Home and Register
+#### Description: Basic Mobile Home and Register<br>
 
 <img src="./src/styles/img/MobileHomeTop.PNG" width = "200" /><img src="./src/styles/img/MobileHomeBottom.PNG" width = "200" />
 
-#### Description: Mobile home page
+#### Description: Mobile home page<br>
 
 <img src="./src/styles/img/MobileMyRunList.PNG" width = "200" /><img src="./src/styles/img/MobileEdit.PNG" width = "200" />
 
-#### Description: Mobile My Run List and edit run
+#### Description: Mobile My Run List and edit run<br>
 
 ## Testing
 
 <img src="./src/styles/img/testCode.PNG" width = "500" />
 
-#### Description: Example of testing code
+#### Description: Example of testing code<br>
 
 <img src="./src/styles/img/loginTest.PNG" width = "500" />
 
-#### Description: Example of Cypress interface
+#### Description: Example of Cypress interface<br>
