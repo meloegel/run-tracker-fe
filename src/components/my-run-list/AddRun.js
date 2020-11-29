@@ -39,7 +39,7 @@ const AddRun = () => {
             ...details,
             publish: publish
         })
-        console.log(details)
+        console.log(details, evt)
     }
 
     const handleSubmit = evt => {
@@ -120,7 +120,7 @@ const AddRun = () => {
                                 id="publish"
                                 value={details.publish}
                             />
-                            <label id='labelPublish' for='publish'>Publish</label>
+                            <label id='labelPublish' htmlFor='publish'>Publish</label>
                         </div>
                         <div>
                             <TextField

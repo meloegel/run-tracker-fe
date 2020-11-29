@@ -14,7 +14,7 @@ const HomePage = () => {
     const [userId, setUserId] = useState({
         userId: window.localStorage.getItem('userId')
     });
-
+    console.log(setUserId)
     const getAllPublishedRuns = () => {
         axiosWithAuth()
             .get('api/run-tracker/runs')
