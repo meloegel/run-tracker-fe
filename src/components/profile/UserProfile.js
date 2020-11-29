@@ -45,6 +45,7 @@ const UserProfile = () => {
             .then(res => {
                 window.alert('Sucessfully updated profile')
                 window.location.reload()
+                console.log(res, evt)
             })
             .catch(err => console.log(err))
     }
